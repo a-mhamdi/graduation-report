@@ -1,0 +1,73 @@
+\tcbset{
+    thmbox/.style={
+        enhanced,
+        breakable,
+        sharp corners=all,
+        fonttitle=\bfseries\normalsize,
+        fontupper=\normalsize\itshape,
+         top=0mm,
+         bottom=0mm,
+         right=0mm,
+        colback=white,
+        colframe=white,
+        colbacktitle=white,
+        coltitle=black,
+        attach boxed title to top left,
+        boxed title style={empty, size=minimal, bottom=1.5mm},
+        overlay unbroken ={
+            \draw (title.south west)--(title.south east);
+            \draw ([xshift=3.5mm]frame.north west)|-%
+                  (frame.south east)--(frame.north east);},
+        overlay first={
+            \draw (title.south west)--(title.south east);
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);
+            \draw (frame.north east)--(frame.south east);},
+        overlay middle={
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);
+            \draw (frame.north east)--(frame.south east);},
+        overlay last={
+            \draw ([xshift=3.5mm]frame.north west)|-%
+                  (frame.south east)--(frame.north east);},
+        },
+    S/.style={thmbox,
+        overlay unbroken ={
+            \draw (title.south west)--(title.south east);
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);},
+        overlay first={
+            \draw (title.south west)--(title.south east);
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);},
+        overlay middle={
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);},
+        overlay last={
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);},
+        },
+    L/.style={thmbox,
+        overlay unbroken ={
+            \draw (title.south west)--(title.south east);
+            \draw ([xshift=3.5mm]frame.north west)|-([xshift=15mm]frame.south west);},
+        overlay first={
+            \draw (title.south west)--(title.south east);
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);},
+        overlay middle={
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);},
+        overlay last={
+            \draw ([xshift=3.5mm]frame.north west)|-([xshift=15mm]frame.south west);},
+        },
+    LQ/.style={thmbox,
+        overlay unbroken ={
+            \draw (title.south west)--(title.south east);
+            \draw ([xshift=3.5mm]frame.north west)|-([xshift=10cm]frame.south west);
+            \node[anchor=east] at (frame.south east) {$\square$};},
+        overlay first={
+            \draw (title.south west)--(title.south east);
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);},
+        overlay middle={
+            \draw ([xshift=3.5mm]frame.north west)--([xshift=3.5mm]frame.south west);},
+        overlay last={
+            \draw ([xshift=3.5mm]frame.north west)|-([xshift=10cm]frame.south west);
+            \node[anchor=east] at (frame.south east) {$\square$};},
+    },
+}
+
+\newtcbtheorem[]{LEM}{Lemma}{thmbox,S}{theo}
+\newtcbtheorem[]{Dem}{Proof}{thmbox,LQ}{theo}
