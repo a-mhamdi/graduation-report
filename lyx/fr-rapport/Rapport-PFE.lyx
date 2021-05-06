@@ -6,280 +6,111 @@
 \origin unavailable
 \textclass book
 \begin_preamble
-\usepackage[utf8,latin9]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage[english, frenchb]{babel}
-\usepackage[cyr]{aeguill}
+% DO NOT ALTER THIS PREAMBLE!!!
+%
+%This preamble is designed to ensure that the document prints
+% out as advertised. If you mess with this preamble,
+% parts of the document may not print out as expected.  If you
+% have problems LaTeXing this file, please contact 
+% the documentation team
+% email: lyx-docs@lists.lyx.org
+
+\usepackage{ifpdf} % part of the hyperref bundle
+\ifpdf % if pdflatex is used
+%\usepackage[square, comma, authoryear]{natbib}
+%\citestyle{nature}
+%\makeatletter
+%\newcommand*{\@***@ofmt}[1]{#1}
+%\makeatother
+\usepackage{comment}
+\includecomment{comment}
+\usepackage{minitoc}
 \usepackage{charter}
+ % set fonts for nicer pdf view
+ \IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
 
-\usepackage[top=1.1in, bottom=0.95in, outer=5cm, inner=2cm, heightrounded, marginparwidth=2.5cm, marginparsep=2cm]{geometry}
-
-\usepackage[Lenny]{fncychap} % Sonny Lenny Glenn Conny Rejne Bjarne Bjornstrup
-
-\ChTitleVar{\Huge\bfseries}
-\ChNameVar{\large\bfseries}
-\ChNumVar{\fontsize{60}{62}\bfseries}
+\fi % end if pdflatex is used
+%\usepackage[utf8]{inputenc}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+%\fancyhf{}
+%\fancyhead[LE]{\bfseries\leftmark}
+%\fancyhead[RO]{\bfseries\rightmark}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+\fancyhf{}
+\renewcommand\headrulewidth{0.75pt}
+%\fancyhead[L]{\chaptername \thechapter}
+%\fancyhead[R]{***
+\fancyfoot[C]{\thepage}
+%Define a short command for \textvisiblespace
+%\newcommand{\spce}{\textvisiblespace}
+%\renewcommand \thepart {\@Roman\c@part}
+%\renewcommand \thechapter {\@arabic\c@chapter}
+%\renewcommand \thesection {\thechapter.\@arabic\c@section}
+%\renewcommand\thesubsection {\thesection.\@arabic\c@subsection}
+%\renewcommand\thesubsubsection{\thesubsection.\@alph\c@subsubsection)}
+%\renewcommand\theparagraph {\thesubsubsection.\@arabic\c@paragraph}
+%\renewcommand\thesubparagraph {\theparagraph.\@arabic\c@subparagraph} 
+\renewcommand{\thesubsubsection}{\alph{subsubsection})}
 
-\fancyhead{}
-\fancyfoot{}
+% provides commands to set caption
+% beside tables/images
+%\newcommand{\TabBesBeg}[1][1.0]{%
+ %\let\MyTable\table
+ %\let\MyEndtable\endtable
+ %\renewenvironment{table}[1]{\begin{SCtable}[#1]##1}{\end{SCtable}}}
 
-\fancyhead[LE, RO]{\bfseries\thepage}
+%\newcommand{\TabBesEnd}{%
+ %\let\table\MyTable
+ %\let\endtable\MyEndtable}
 
-\fancyhead[RE]{\bfseries\nouppercase{\leftmark}}
-\fancyhead[LO]{\bfseries\nouppercase{\rightmark}}
+%\newcommand{\FigBesBeg}[1][1.0]{%
+% \let\MyFigure\figure
+% \let\MyEndfigure\endfigure
+% \renewenvironment{figure}[1]{\begin{SCfigure}[#1]##1}{\end{SCfigure}}}
 
-\let\headruleORIG\headrule
-\renewcommand{\headrule}{\color{black} \headruleORIG}
+%\newcommand{\FigBesEnd}{%
+%\let\figure\MyFigure
+% \let\endfigure\MyEndfigure}%}
+%}
+%\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{graphicx}
+%\usepackage[utf8]{inputenc}
+%\usepackage[style=authoryear,natbib=true]{biblatex}
+%\usepackage[natbib=true,bibstyle=apalike,citestyle=authoryear]{biblatex}
+%\bibliographystyle{apalike} 
+\usepackage[italic]{mathastext}
+\usepackage[figure]{hypcap}
+\newcommand{\spce}{\textvisiblespace}
+\newcommand{\IndexDef}[1]{\textit{#1}}
+%\usepackage{fancyhdr}
+%\renewcommand{\headrulewidth}{1pt}
+% the pages of the TOC is numbered roman
+% and a pdf-bookmark for the TOC is added
+\let\myTOC\tableofcontents
+\renewcommand\tableofcontents{%
+  \frontmatter
+  \pdfbookmark[1]{\contentsname}{}
+  \myTOC
+  \mainmatter }
+\usepackage{array, multirow}
+\let\mySection\section\renewcommand{\section}{\suppressfloats[t]\mySection}
+% redefine the \LyX macro for PDF bookmarks
+\def\LyX{\texorpdfstring{%
+  L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
 
-\setlength{\headheight}{15pt}
-
-\makeatletter
-\if@twoside % commands below work only for twoside option of \documentclass
-    \newlength{\textblockoffset}
-    \setlength{\textblockoffset}{12mm}
-    \addtolength{\hoffset}{\textblockoffset}
-    \addtolength{\evensidemargin}{-2.0\textblockoffset}
-\fi
-\makeatother
-
-\renewcommand{\baselinestretch}{1.1}
-
-\usepackage{pifont}
-\usepackage{dsfont}
-\usepackage{shorttoc}
-\usepackage{eqparbox}
-\usepackage{sidecap}
-
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{mathtools}
-\usepackage{nicefrac}
-
-\usepackage{supertabular}
-\usepackage{tabularx}
-\usepackage{tabulary}
-\usepackage{setspace}
-\usepackage[dvips]{graphicx}
-\usepackage{epsfig}
-\usepackage{float}
-\usepackage{psfrag}
 \usepackage{epstopdf}
-\usepackage{adforn}
-\usepackage{array}
-\usepackage{pifont}
-\usepackage{textcomp}
-\usepackage{multirow}
-
-\usepackage{multirow}
-\usepackage[boxed]{algorithm}
-\usepackage{algorithmic}
-\usepackage{rotating}
-\usepackage{floatpag}
-
-\usepackage{booktabs}
-\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
-
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage[section, above, below]{placeins}
-
-\renewcommand{\figurename}{Fig.}
-\renewcommand{\tablename}{Tab.}
-
-\usepackage{xcolor}
-\usepackage{esint}
-
-\usepackage{multicol}
-
-\usepackage[nottoc, notlof, notlot]{tocbibind}
-\usepackage[french, tight]{minitoc}
-
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows}
-
-%%% MatLab Figures Gen
-\usepackage{pgfplots}
-\pgfplotsset{compat=newest}
-\pgfplotsset{plot coordinates/math parser=false}
-\usetikzlibrary{plotmarks}
-%%%%%
-\newcommand{\Int}[4]{\draw[fill=white](#1, #2)rectangle(#3, #4);}
-
-\usepackage{pgfplots}
-\pgfplotsset{
-    dirac/.style={
-            mark=triangle*,
-            mark options={scale=2},
-            ycomb,
-            scatter,
-            visualization depends on={y/abs(y)-1 \as \sign},
-            scatter/@pre marker code/.code={\scope[rotate=90*\sign,yshift=-2pt]}
-        }
-}
-
-% --------------------- Thm, Rema, Exmp, Dem ---------------------
-\theoremstyle{plain}
-\newtheorem{THM}{Theorem}[section]
-\newtheorem{Lem}[THM]{Lemma}
-\newtheorem{Prop}[THM]{Proposition}
-\newtheorem{Not}[THM]{Notation}
-% \newtheorem*{Cor}[Thm]{Corollaire}
-
-\theoremstyle{definition}
-\newtheorem{DEF}{Definition}[section]
-\newtheorem{Conj}{Conjecture}[section]
-\newtheorem{EXMP}{Example}[section]
-
-\theoremstyle{remark}
-\newtheorem{Rema}{Remark}[section]% \newtheorem{Rema}[Thm]{Remarque}
-\newtheorem*{Note}{Note}
-\newtheorem{Case}{Case}
-
-\usepackage{pagecolor}
-\usepackage[framemethod=TikZ]{mdframed}
-\usepackage{hf-tikz}
-\usetikzlibrary{calc}
-
-% --------------------- Thm Def Exmp ---------------------
-% \input{to-include/myTheo}
-
-% \input{to-include/myLema}% Empty
-% \input{to-include/myNota}% Empty
-% \input{to-include/myRema}% Empty
-
-% \input{to-include/myDef}
-% \input{to-include/myExmp}
-% \input{to-include/myDem}
-
-% \input{to-include/myQuot}
-
-\usepackage{shapepar}
-\usepackage{fancyvrb}
-\usepackage{spot}
-\usepackage{ifsym}
-\usepackage{fancypar}
-\usepackage{fancytabs}
-\fancytabsHeight{5.25cm}
-\definecolor{TestFonce}{cmyk}{1,1,1,0}
-\definecolor{TestClair}{cmyk}{0.1,0.1,0.1,0}
-\usepackage{textpos}
-\usepackage{tikz-3dplot}
-\usepackage[american]{circuitikz}
-\usepackage{pgf}
-\usepackage{tikz}
-\usetikzlibrary{patterns}
-\usetikzlibrary{shapes.geometric}
-
-\usetikzlibrary{decorations.markings}
-\usetikzlibrary{arrows}
-\usetikzlibrary{fit}
-
-\usepackage{textcomp}
-\usetikzlibrary{babel}
-\usepackage{schemabloc}
-\usepackage{lettrine}
-
-\usepackage{afterpage}
-
-\newcommand\blankpage{
-    \null
-    \thispagestyle{empty}
-    \addtocounter{page}{-1}
-    \clearpage}
-
-\usepackage[unicode=true, bookmarks=true, bookmarksnumbered=true, bookmarksopen=true, bookmarksopenlevel=1, breaklinks=true, pdfborder={0 0 0}, backref=true, colorlinks=true]{hyperref}
-
-\definecolor{LinkCol}{rgb}{0,0,0.5}
-\definecolor{CiteCol}{rgb}{0.5,0,0.1}
-
-\usepackage{colortbl}
-\arrayrulecolor{black}
-
-\renewcommand{\headrulewidth}{\iffloatpage{0pt}{1.0pt}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Clear Header Style on the Last Empty Odd pages
-\makeatletter
-
-\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else%
-            \hbox{}%
-            \thispagestyle{empty}%              % Empty header styles
-            \newpage%
-            \if@twocolumn\hbox{}\newpage\fi\fi\fi}
-
-\makeatother
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\usepackage{ifpdf}
-%\ifpdf
-
-\usepackage[toc,page]{appendix}
-\renewcommand{\appendixpagename}{Annexes}
-\renewcommand{\appendixtocname}{\numberline{}Annexes}
-
-\usepackage{csquotes}
-
-\usepackage[hyperref=true,
-    url=false,
-    isbn=false,
-    backref=true,
-    style=alphabetic,
-    citereset=chapter,
-    maxbibnames=3,
-    defernumbers=true,
-    firstinits=true,
-    block=none,
-    sortcites,
-    backend=bibtex]{biblatex}
-
-\addbibresource{ma-biblio.bib}
-
-\DefineBibliographyStrings{french}{
-    in           = {dans},
-    inseries     = {dans},
-    pages        = {pp\adddot},
-    backrefpage  = {Cit\'e en p.}, % for single page number
-    backrefpages = {Cit\'e en pp.} % for multiple page numbers
-}
-
-\usepackage{verbatim}
-
-\usepackage{enumitem}
-
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
-        \node[shape=circle,fill=white,draw,inner sep=2pt] (char) {#1};}}
-
-\usepackage{microtype}
-
-\newenvironment{Abstract}%
-{\null\vfill\begin{center}%
-        \bfseries\abstractname\end{center}}%
-{\vfill\null}
-
-\usepackage[savewrites, style=long]{glossaries}
-
-\makeglossaries
-
-\setacronymstyle{long-sc-short}
-% \input{to-include/glos.tex}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{lipsum}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end_preamble
 \options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage, square
 \use_default_options true
 \begin_modules
 logicalmkup
+theorems-ams
+theorems-chap
 customHeadersFooters
-foottoend
 \end_modules
 \maintain_unincluded_children false
 \language french
@@ -304,11 +135,11 @@ foottoend
 \bibtex_command default
 \index_command default
 \float_placement H
-\paperfontsize 11
+\paperfontsize 12
 \spacing single
 \use_hyperref true
 \pdf_title "***"
-\pdf_author "*** ***"
+\pdf_author "***"
 \pdf_subject "***"
 \pdf_keywords "***"
 \pdf_bookmarks true
@@ -323,8 +154,8 @@ foottoend
 \pdf_quoted_options "linkcolor=black, citecolor=black, urlcolor=blue, filecolor=blue,pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
 \papersize a4paper
 \use_geometry true
-\use_package amsmath 1
-\use_package amssymb 1
+\use_package amsmath 2
+\use_package amssymb 2
 \use_package cancel 1
 \use_package esint 1
 \use_package mathdots 1
@@ -347,21 +178,25 @@ foottoend
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2.5cm
+\leftmargin 3.5cm
 \topmargin 3cm
-\rightmargin 1.5cm
+\rightmargin 2.5cm
 \bottommargin 3cm
-\secnumdepth 2
+\secnumdepth 3
 \tocdepth 2
 \paragraph_separation skip
 \defskip medskip
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style swiss
+\quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
-\papersides 2
-\paperpagestyle default
+\papersides 1
+\paperpagestyle fancy
+\bullet 0 2 5 4
+\bullet 1 2 12 -1
+\bullet 2 0 0 -1
+\bullet 3 0 10 4
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -371,22 +206,105 @@ foottoend
 
 \begin_body
 
-\begin_layout Title
-Titre
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{to-include/cover-page}
 \end_layout
 
-\begin_layout Author
-Moi même
+\end_inset
+
+
 \end_layout
 
-\begin_layout Title
+\begin_layout Standard
 \noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{to-include/front-mat.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter*{Remerciements}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+***
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Header
+Table des matières
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Header
+Table des figures
 \end_layout
 
 \begin_layout Standard
@@ -398,7 +316,207 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
-\begin_inset FloatList table
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoftables
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{LISTE DES TABLEAUX}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter*{Introduction générale}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Introduction générale}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Header
+Introduction générale
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\color black
+***
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+adjustmtc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\noindent
+***
+\end_layout
+
+\begin_layout Left Header
+\noindent
+***
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+minitoc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\noindent
+Introduction
+\end_layout
+
+\begin_layout Section
+\noindent
+Conclusion
+\end_layout
+
+\begin_layout Chapter
+\noindent
+***
+\end_layout
+
+\begin_layout Left Header
+\noindent
+***
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+minitoc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\noindent
+Introduction
+\end_layout
+
+\begin_layout Section
+\noindent
+***
+\end_layout
+
+\begin_layout Left Header
+\noindent
+***
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+minitoc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\noindent
+Introduction
+\end_layout
+
+\begin_layout Section
+\noindent
+Conclusion
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Conclusion générale}
+\end_layout
 
 \end_inset
 
@@ -406,55 +524,143 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Chapter*
-Introduction générale
+\noindent
+Conclusion générale
 \end_layout
 
-\begin_layout Chapter
-Mon premier chapitre
-\end_layout
-
-\begin_layout Section
-Ma première section
-\end_layout
-
-\begin_layout Subsection
-Sous-section 1.1.1
-\end_layout
-
-\begin_layout Subsection
-Sous-section 1.1.2
-\end_layout
-
-\begin_layout Section
-Ma deuxième section
-\end_layout
-
-\begin_layout Subsection
-Sous-section 1.2.1
-\end_layout
-
-\begin_layout Subsection
-Sous-section 1.2.2
-\end_layout
-
-\begin_layout Chapter
-Mon deuxième chapitre
-\end_layout
-
-\begin_layout Chapter*
+\begin_layout Left Header
+\noindent
 Conclusion générale
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintAll"
-bibfiles "ma-biblio"
-options "bibtotoc,ieeetr-fr"
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+adjustmtc
+\end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Bibliographie}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\noindent
+Résumé
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\color black
+***
+\end_layout
+
+\begin_layout Description
+\noindent
+Mots
+\begin_inset space ~
+\end_inset
+
+clés
+\end_layout
+
+\begin_layout Standard
+\noindent
+***, ***.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\noindent
+Abstract
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\color black
+***
+\end_layout
+
+\begin_layout Description
+\noindent
+Key
+\begin_inset space ~
+\end_inset
+
+Words
+\end_layout
+
+\begin_layout Standard
+\noindent
+***, ***.
 \end_layout
 
 \end_body

@@ -1,0 +1,14 @@
+% \usepackage{chngcntr}
+
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{theorems}
+
+\newtcolorbox[auto counter, number within=section]{Thm}[2][]{%
+    enhanced,
+    colframe=black,
+    colback=white,
+    colbacktitle=white,
+    coltitle=black,
+    attach boxed title to top left={xshift=5mm,yshift*=-\tcboxedtitleheight/2},
+    fonttitle=\bfseries,
+    title=Theorem~\thetcbcounter: #2,#1}
