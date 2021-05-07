@@ -1,4 +1,4 @@
-> _Hints on how to write some mathematical environments._
+Hints on how to write some mathematical environments.
 
 **Definition**
 
