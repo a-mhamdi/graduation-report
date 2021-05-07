@@ -4,7 +4,7 @@
 
 ### Installation
 
-> _A quick guide on how to install LaTeX distribution depending on the OS your machine is running._
+A quick guide on how to install LaTeX distribution depending on the OS your machine is running.
 
 <center>
 
@@ -12,11 +12,11 @@
 
 </center>
 
-> _LyX – The Document Processor_
+LyX – The Document Processor
 
 -   _WYSIWYG Document Editor_ : [LyX](http://www.lyx.org/ "Link to LyX")
 
-> _Below are the links to two useful apps in order to draw schemes in Tikz and to manage bibliography DB through semi wysiwyg editors._
+Below are the links to two useful apps in order to draw schemes in Tikz and to manage bibliography DB through semi wysiwyg editors.
 
 -   _Tikz Editor_ : [TikzEdt](http://www.tikzedt.org/ "Link to TikzEdt")
 
