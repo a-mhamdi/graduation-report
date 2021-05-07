@@ -1,5 +1,24 @@
-## Graduation Report / Rapport de PFE
----
-#### Templates using LaTeX / LyX / MS Word Template
+## LaTeX Template for Graduation Project Report 
 
-The prefix `*en*` (resp. `*fr*`) stands for **English** (resp. **French**). 
+* * *
+
+### Installation
+
+> _A quick guide on how to install LaTeX distribution depending on the OS your machine is running._
+
+<center>
+
+[<img src = "imgs-ReadMe/Win.png" alt = "On how to install proTeXt" width="50" height="50">](https://www.tug.org/protext/)				[<img src = "imgs-ReadMe/Linux.jpeg" alt = "On how to install TeX Live" width="40" height="50">](https://www.tug.org/texlive/)				[<img src = "imgs-ReadMe/Mac.jpeg" alt = "On how to install Mac TeX" width="50" height="50">](https://www.tug.org/mactex/)
+
+</center>
+
+> _LyX – The Document Processor_
+
+-   _WYSIWYS Document Editor_ : [LyX](http://www.lyx.org/ "Link to LyX")
+
+> _Below are the links to two useful apps in order to draw schemes in Tikz and to manage bibliography DB through semi wysiwyg editors._
+
+-   _Tikz Editor_ : [TikzEdt](http://www.tikzedt.org/ "Link to TikzEdt")
+
+-   _Bibliography Manager_ : [JabRef](http://www.jabref.org/ "Link to JabRef")
+
