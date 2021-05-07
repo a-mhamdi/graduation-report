@@ -14,7 +14,7 @@
 
 > _LyX – The Document Processor_
 
--   _WYSIWYS Document Editor_ : [LyX](http://www.lyx.org/ "Link to LyX")
+-   _WYSIWYG Document Editor_ : [LyX](http://www.lyx.org/ "Link to LyX")
 
 > _Below are the links to two useful apps in order to draw schemes in Tikz and to manage bibliography DB through semi wysiwyg editors._
 
