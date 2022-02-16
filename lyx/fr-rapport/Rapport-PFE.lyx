@@ -37,6 +37,7 @@
 %\fancyhf{}
 %\fancyhead[LE]{\bfseries\leftmark}
 %\fancyhead[RO]{\bfseries\rightmark}
+\usepackage{charter}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -330,15 +331,23 @@ addcontentsline{toc}{chapter}{Introduction générale}
 Introduction générale
 \end_layout
 
-\begin_layout Standard
-\noindent
+\begin_layout Section*
+Contexte et motivations
+\end_layout
 
-\color black
+\begin_layout Standard
+***
+\end_layout
+
+\begin_layout Section*
+Plan du rapport
+\end_layout
+
+\begin_layout Standard
 ***
 \end_layout
 
 \begin_layout Standard
-\noindent
 \begin_inset ERT
 status collapsed
 
@@ -352,9 +361,6 @@ adjustmtc
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -510,6 +516,22 @@ status collapsed
 
 \backslash
 adjustmtc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{*}
 \end_layout
 
 \end_inset
