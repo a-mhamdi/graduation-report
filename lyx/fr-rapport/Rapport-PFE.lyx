@@ -210,13 +210,13 @@ customHeadersFooters
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-input{to-include/cover-page}
+input{a-inclure/page-garde}
 \end_layout
 
 \end_inset
@@ -227,13 +227,13 @@ input{to-include/cover-page}
 \begin_layout Standard
 \noindent
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-input{to-include/front-mat.tex}
+input{a-inclure/avant-propos.tex}
 \end_layout
 
 \end_inset
