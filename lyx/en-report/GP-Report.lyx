@@ -313,7 +313,7 @@ General Introduction
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -488,7 +488,7 @@ General Conclusion
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -548,7 +548,7 @@ nocite{*}
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -566,7 +566,7 @@ lhead{Bibliography}
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "biblio/ma-biblio"
+bibfiles "biblio/my-biblio"
 options "bibtotoc,apalike2"
 
 \end_inset
