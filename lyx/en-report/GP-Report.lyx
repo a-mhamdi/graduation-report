@@ -136,9 +136,8 @@ customHeadersFooters
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement H
 \paperfontsize 11
-\spacing single
+\spacing onehalf
 \use_hyperref true
 \pdf_title "***"
 \pdf_author "***"
@@ -187,7 +186,7 @@ customHeadersFooters
 \secnumdepth 2
 \tocdepth 2
 \paragraph_separation skip
-\defskip medskip
+\defskip smallskip
 \is_math_indent 0
 \math_numbering_side default
 \quotes_style british
