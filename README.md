@@ -2,7 +2,7 @@
 
 * * *
 
-This repositiry contains 4 branches `main`, `TeX, `LyX` and `MS-WORD`. Make sure to checkout to the desired branch if you want download your preferable template.
+This repositiry contains 4 branches `main`, `TeX`, `LyX` and `MS-WORD`. Make sure to checkout to the desired branch if you want download your preferable template.
 
 ### Installation
 
