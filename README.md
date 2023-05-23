@@ -2,6 +2,8 @@
 
 * * *
 
+This repositiry contains 4 branches `main`, `TeX, `LyX` and `MS-WORD`. Make sure to checkout to the desired branch if you want download your preferable template.
+
 ### Installation
 
 A quick guide on how to install LaTeX distribution depending on the OS your machine is running.
