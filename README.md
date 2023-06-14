@@ -2,7 +2,7 @@
 
 * * *
 
-Four branches are in this repository: [main](https://github.com/a-mhamdi/graduation-report/), [TeX](https://github.com/a-mhamdi/graduation-report/tree/TeX), [LyX](https://github.com/a-mhamdi/graduation-report/tree/LyX) and [MS-WORD](https://github.com/a-mhamdi/graduation-report/tree/MS-WORD). Make sure to checkout to the desired branch if you want download your preferable template.
+Four branches are in this repository: [main](https://github.com/a-mhamdi/graduation-report/), [TeX](https://github.com/a-mhamdi/graduation-report/tree/TeX), [LyX](https://github.com/a-mhamdi/graduation-report/tree/LyX) and [MS-WORD](https://github.com/a-mhamdi/graduation-report/tree/MS-WORD). Make sure to checkout to the desired branch when downloading your preferable template.
 
 ### Installation
 
