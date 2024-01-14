@@ -2,7 +2,12 @@
 
 * * *
 
-Four branches are in this repository: [main](https://github.com/a-mhamdi/graduation-report/), [TeX](https://github.com/a-mhamdi/graduation-report/tree/TeX), [LyX](https://github.com/a-mhamdi/graduation-report/tree/LyX) and [MS-WORD](https://github.com/a-mhamdi/graduation-report/tree/MS-WORD). Make sure to checkout to the desired branch when downloading your preferable template.
+Three kinds of template are in this repository:
+- [TeX](https://github.com/a-mhamdi/graduation-report/tree/main/TeX),
+- [LyX](https://github.com/a-mhamdi/graduation-report/tree/main/LyX),
+- [MS-WORD](https://github.com/a-mhamdi/graduation-report/tree/main/MS-WORD).
+
+<!-- Make sure to checkout to the desired branch when downloading your preferable template. -->
 
 ### Installation
 
@@ -10,7 +15,9 @@ A quick guide on how to install LaTeX distribution depending on the OS your mach
 
 <center>
 
-[<img src = "imgs-ReadMe/Win.png" alt = "On how to install proTeXt" width="50" height="50">](https://www.tug.org/protext/)				[<img src = "imgs-ReadMe/Linux.jpeg" alt = "On how to install TeX Live" width="40" height="50">](https://www.tug.org/texlive/)				[<img src = "imgs-ReadMe/Mac.jpeg" alt = "On how to install Mac TeX" width="50" height="50">](https://www.tug.org/mactex/)
+[<img src = "imgs/Win.png" alt = "On how to install proTeXt" width="50" height="50">](https://www.tug.org/protext/)
+[<img src = "imgs/Linux.jpeg" alt = "On how to install TeX Live" width="40" height="50">](https://www.tug.org/texlive/)
+[<img src = "imgs/Mac.jpeg" alt = "On how to install Mac TeX" width="50" height="50">](https://www.tug.org/mactex/)
 
 </center>
 
