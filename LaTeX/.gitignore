@@ -1,0 +1,30 @@
+*~
+
+### TeX ###
+## Core latex/pdflatex auxiliary files:
+
+*.aux
+*.log
+*.out
+
+*.toc
+*.mtc*
+*.lof
+*.lot
+
+*.bbl
+*-blx.bib
+*.blg
+
+*.xml
+*.maf
+*.ist
+*.fls
+*.glg
+*.glo
+*.gls
+*.slg
+*.syg
+*.syi
+
+*.swp

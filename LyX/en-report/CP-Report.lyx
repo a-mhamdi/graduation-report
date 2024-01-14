@@ -1,0 +1,1563 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+% DO NOT ALTER THIS PREAMBLE!!!
+%
+%This preamble is designed to ensure that the document prints
+% out as advertised. If you mess with this preamble,
+% parts of the document may not print out as expected.  If you
+% have problems LaTeXing this file, please contact 
+% the documentation team
+% email: lyx-docs@lists.lyx.org
+
+\usepackage[ec]{aeguill}
+
+\usepackage{ifpdf} % part of the hyperref bundle
+\ifpdf % if pdflatex is used
+
+ % set fonts for nicer pdf view
+ \IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
+
+\fi % end if pdflatex is used
+
+\usepackage{charter}
+
+\renewcommand{\thesubsubsection}{\alph{subsubsection})}
+
+\usepackage[Rejne]{fncychap} % Sonny Lenny Glenn Conny Rejne Bjarne Bjornstrup
+
+\ChTitleVar{\Huge\bfseries}
+\ChNameVar{\large\bfseries}
+\ChNumVar{\fontsize{60}{62}\bfseries}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyfoot{}
+
+\fancyhead[L]{\bfseries\nouppercase{\leftmark}}
+\fancyhead[R]{\bfseries\thepage}
+
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+
+%\usepackage[italic]{mathastext}
+
+\newcommand{\spce}{\textvisiblespace}
+\newcommand{\IndexDef}[1]{\textit{#1}}
+
+\usepackage{array, multirow}
+\let\mySection\section\renewcommand{\section}{\suppressfloats[t]\mySection}
+
+% redefine the \LyX macro for PDF bookmarks
+\def\LyX{\texorpdfstring{%
+  L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
+
+\usepackage{epstopdf}
+
+\usepackage{lipsum}
+\end_preamble
+\options english,frenchb,intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,square,utf8
+\use_default_options true
+\begin_modules
+logicalmkup
+theorems-ams
+theorems-chap
+tcolorbox
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 90 90
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbh
+\paperfontsize 11
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Graduation Internship Report"
+\pdf_author "A. Mhamdi"
+\pdf_subject "***"
+\pdf_keywords "***"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=black, citecolor=black, urlcolor=blue, filecolor=blue,pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style ieeetr
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3cm
+\rightmargin 2.5cm
+\bottommargin 3cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style british
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 2 5 4
+\bullet 1 2 12 -1
+\bullet 2 0 0 -1
+\bullet 3 0 10 4
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+selectlanguage{english}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+COVER PAGE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+newcommand{
+\backslash
+HRule}{
+\backslash
+rule{
+\backslash
+linewidth}{0.35mm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{flushleft}
+\end_layout
+
+\begin_layout Plain Layout
+
+          {
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{
+\backslash
+large{Republic of Tunisia}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+vspace*{
+\backslash
+stretch{0.025}}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{
+\backslash
+large{Ministry of Higher Education and Scientific Research}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+vspace*{
+\backslash
+stretch{0.025}}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{
+\backslash
+large{General Directorate of Technological Studies}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+vspace*{
+\backslash
+stretch{0.025}}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{
+\backslash
+large{Higher Institute of Technological Studies of Bizerte}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+vspace*{
+\backslash
+stretch{0.025}}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{
+\backslash
+large{Department of Electrical Engineering}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{flushleft}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+vspace*{
+\backslash
+stretch{0.035}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+textbf{
+\backslash
+textsc{
+\backslash
+huge{Capstone Project}}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+vspace*{
+\backslash
+stretch{0.025}}
+\end_layout
+
+\begin_layout Plain Layout
+
+        for the degree of 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+vspace*{
+\backslash
+stretch{0.015}}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+textbf{
+\backslash
+textsc{
+\backslash
+large{Senior Technician in Electrical Engineering}}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+vspace*{
+\backslash
+stretch{0.035}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+        prepared by
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+vspace*{
+\backslash
+stretch{0.01}}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+textbf{{
+\backslash
+large *** 
+\backslash
+textsc{***}}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+vspace*{
+\backslash
+stretch{0.01}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+vspace*{
+\backslash
+stretch{0.035}}
+\end_layout
+
+\begin_layout Plain Layout
+
+        Title of the project
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+vspace*{
+\backslash
+stretch{0.02}}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+HRule 
+\backslash
+
+\backslash
+[0.3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+Huge{
+\backslash
+textbf{***}}
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+HRule 
+\backslash
+
+\backslash
+% [1.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+vspace*{
+\backslash
+stretch{0.015}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+        Presented on ** June **** in Bizerte in front of the exam jury:
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+begin{tabular}{lll}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{President:}               & 
+\backslash
+textsc{*** ****} & ***, 
+\backslash
+textsc{****}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{Reviewer:}              & 
+\backslash
+textsc{*** ****} & ***, 
+\backslash
+textsc{****}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{Examiner:}                  & 
+\backslash
+textsc{*** ****} & ***, 
+\backslash
+textsc{****}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{Advisor:} & 
+\backslash
+textsc{*** ****} & ***, 
+\backslash
+textsc{****}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+textbf{Co-advisor:}       & 
+\backslash
+textsc{*** ****} & ***, 
+\backslash
+textsc{***}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+sloppy
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ACKNOWLEDGMENTS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+stretch{1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+emph{
+\backslash
+scriptsize{
+\end_layout
+
+\begin_layout Plain Layout
+
+            ***}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter*{Acknowledgments}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+***.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+null
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoffigures 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoftables
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+General Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{General Introduction} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+markboth{General Introduction}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Context and motivations
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1-2]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Outline
+\end_layout
+
+\begin_layout Description
+Chapter
+\begin_inset space ~
+\end_inset
+
+1 ***
+\end_layout
+
+\begin_layout Description
+Chapter
+\begin_inset space ~
+\end_inset
+
+2 ***
+\end_layout
+
+\begin_layout Description
+Chapter
+\begin_inset space ~
+\end_inset
+
+3 ***
+\end_layout
+
+\begin_layout Chapter
+\noindent
+***
+\end_layout
+
+\begin_layout Section*
+\noindent
+Introduction
+\end_layout
+
+\begin_layout Section
+Section #1
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Section #2
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\noindent
+Conclusion
+\end_layout
+
+\begin_layout Chapter
+\noindent
+***
+\end_layout
+
+\begin_layout Section*
+\noindent
+Introduction
+\end_layout
+
+\begin_layout Section
+Section #1
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Section #2
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\noindent
+Conclusion
+\end_layout
+
+\begin_layout Chapter
+***
+\end_layout
+
+\begin_layout Section*
+\noindent
+Introduction
+\end_layout
+
+\begin_layout Section
+Section #1
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Section #2
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\noindent
+Conclusion
+\end_layout
+
+\begin_layout Chapter*
+\noindent
+General Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{General Conclusion} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+markboth{General Conclusion}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1-5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+backmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+bibname{Bibliography}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Bibliography} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+markboth{Bibliography}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "biblio/my-biblio"
+options "ieeetr"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Dynamic Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+selectlanguage{english}
+\backslash
+bfseries
+\backslash
+abstractname
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "7pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{10pt}
+\backslash
+hspace{10pt}{
+\backslash
+bf Keywords:} ***; ***; ***; ***; ***; ***.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+par
+\backslash
+rule{
+\backslash
+linewidth}{.7pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Dynamic Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+selectlanguage{french}
+\backslash
+bfseries
+\backslash
+abstractname
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "7pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{10pt}
+\backslash
+hspace{10pt}{
+\backslash
+bf Mots cl
+\backslash
+'es :} ***; ***; ***; ***; ***; ***.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+par
+\backslash
+rule{
+\backslash
+linewidth}{.7pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

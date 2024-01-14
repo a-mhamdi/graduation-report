@@ -1,0 +1,83 @@
+\documentclass[a4paper, 11pt, twoside, openright]{book}
+
+\input{to-include/my-packs.tex}
+
+%%% Propriétés du PDF
+\hypersetup{
+    pdftitle={***},
+    pdfauthor={***},
+    pdfsubject={***},
+    pdfkeywords={***},
+    linkcolor=LinkCol,
+    citecolor=CiteCol,
+    urlcolor=LinkCol,
+    filecolor=blue,
+    pdfpagelayout=SinglePage,
+    pdffitwindow=true,
+    pdfnewwindow=true,
+    pdfstartview=XYZ,
+    pdftoolbar=true,
+    pdfmenubar=true,
+    plainpages=false
+}
+%%%
+
+\begin{document}
+
+\input{to-include/cover-page.tex} % Page de garde
+
+\frontmatter
+
+\dominitoc
+\input{to-include/front-mat.tex} % Dédicaces \& Remerciements
+
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+%%%%% Mes chapitres
+\input{chaps/intro.tex}\adjustmtc 		% Introduction
+\input{chaps/chap-1.tex} 				% Chapitre 1
+\input{chaps/chap-2.tex} 				% Chapitre 2
+\input{chaps/chap-3.tex} 				% Chapitre 3
+\input{chaps/concl.tex}\adjustmtc      	% Conclusion
+
+%%%%% Mes annexes
+\begin{appendices}
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+  \makeatletter
+  \addtocontents{toc}{%
+    \begingroup
+    \let\protect\l@chapter\protect\l@section
+    \let\protect\l@section\protect\l@subsection
+  }
+  \makeatother
+
+  \input{app-dix/app-A.tex} % Annexe A
+  \input{app-dix/app-B.tex} % Annexe B
+  \input{app-dix/app-C.tex} % Annexe C
+
+  \addtocontents{toc}{\endgroup}
+\end{appendices}
+
+\backmatter
+%
+\phantomsection
+\addcontentsline{toc}{chapter}{\numberline{}Bibliographie}
+\printbibliography
+
+\clearpage
+\pagestyle{empty}
+\null\newpage
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\phantomsection
+\pdfbookmark[0]{R\'esum\'e{\textendash}Abstract}{abstract}
+\include{to-include/my-abstract} % Résumé + Abstract
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

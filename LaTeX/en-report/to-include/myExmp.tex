@@ -1,0 +1,20 @@
+% https://github.com/badge/bham-latex-preamble
+
+\usepackage{thmtools, needspace}
+
+\newcommand{\exrule}{\rule{\textwidth}{1pt}}
+
+\declaretheoremstyle[
+  spaceabove = 15pt, spacebelow=15pt,  % Space above and below the entire example
+  headfont   = \bfseries,  % Head font
+  headformat = $\blacktriangledown$ Example~\NUMBER\NOTE\vspace{-3mm},
+  headpunct  = \newline\exrule\newline,    % Punctuation after the head
+  notefont   = \itshape,           % Font of the note (example name in this case)
+  notebraces = {--- }{},           % Braces before and after note; again be careful with spaces.
+  bodyfont   = \leftskip=0em \rightskip=0em \itshape \rmfamily \linespread{1.05}, % Body font and formatting
+  preheadhook   = \Needspace*{4\baselineskip},  % Hook before the head; using needspace to ensure the head of the example is not on a separate page to its body.
+  postheadspace = 0pt,              % Space after the head; we want none as we have a new line already
+  prefoothook   = \ifhmode \hspace*{\fill}\newline \else \vspace{-5mm} \fi \exrule  % Hook for LaTeX code before the foot of the example (the space below it). If we are in horizontal mode, add a new line, otherwise just draw the ruled line. This makes 90% of the examples require no manual spacing.
+  ]{examplestyle}
+
+\declaretheorem[style=examplestyle, numberwithin=section]{Exmp}
