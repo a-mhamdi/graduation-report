@@ -4,9 +4,11 @@
 A quick guide on how to install LaTeX distribution depending on the OS your machine is running.
 
 <center>
-	[<img src = "imgs/Win.png" alt = "On how to install proTeXt" width="50" height="50">](https://www.tug.org/protext/)
-	[<img src = "imgs/Linux.png" alt = "On how to install TeX Live" width="40" height="50">](https://www.tug.org/texlive/)
-	[<img src = "imgs/Mac.png" alt = "On how to install Mac TeX" width="50" height="50">](https://www.tug.org/mactex/)
+
+[<img src = "imgs/Win.png" alt = "On how to install proTeXt" width="50" height="50">](https://www.tug.org/protext/)
+[<img src = "imgs/Linux.png" alt = "On how to install TeX Live" width="40" height="50">](https://www.tug.org/texlive/)
+[<img src = "imgs/Mac.png" alt = "On how to install Mac TeX" width="50" height="50">](https://www.tug.org/mactex/)
+
 </center>
 
 LyX – The Document Processor

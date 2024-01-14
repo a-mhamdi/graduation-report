@@ -3,7 +3,7 @@
 * * *
 
 Three kinds of template are in this repository:
-- [TeX](https://github.com/a-mhamdi/graduation-report/tree/main/LaTeX)
+- [LaTeX](https://github.com/a-mhamdi/graduation-report/tree/main/LaTeX)
 - [LyX](https://github.com/a-mhamdi/graduation-report/tree/main/LyX)
 - [MS-WORD](https://github.com/a-mhamdi/graduation-report/tree/main/M-WORD)
 
