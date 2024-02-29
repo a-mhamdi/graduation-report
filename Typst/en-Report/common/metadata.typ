@@ -13,3 +13,9 @@
 
 #let dedication = lorem(16)
 #let ack = lorem(32)
+
+#let resume = lorem(128)
+#let abstract = lorem(128)
+
+#let motscles = "rapport, pfe, typst"
+#let keywords = "report, capstone, typst"

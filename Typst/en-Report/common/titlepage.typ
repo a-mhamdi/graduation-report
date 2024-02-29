@@ -30,7 +30,7 @@
   // --- Title Page ---
 
   v(15mm)
-  align(left, text(font: sans-font, 1.25em, weight: 100, "Ministry of Higher Education and Scientific Research, Tunisia"))
+  align(center, text(font: sans-font, 1.25em, weight: 100, "Ministry of Higher Education and Scientific Research, Tunisia"))
 
   v(10mm)
   align(center, text(font: sans-font, 1.25em, weight: 100, "Institute of Technological Studies of Bizerte"))

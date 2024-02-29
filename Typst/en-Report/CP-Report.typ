@@ -1,9 +1,12 @@
+// CAPSTONE PROJECT
 #import "Class.typ": *
 
 #import "common/metadata.typ": *
 #import "common/titlepage.typ": *
 
-#set document(author: author, title: title, keywords: "report, capstone, project, programming", date: auto)
+#import "@preview/colorful-boxes:1.2.0": outlinebox
+
+#set document(author: author, title: title, keywords: "report, capstone, project, typst", date: auto)
 
 // The project function is called with the content of the document.
 #show: report.with(
@@ -76,3 +79,29 @@
 #set page(header: smallcaps(title) + h(1fr) + emph("Bibliography") + line(length: 100%))
 #text(white)[#heading(bookmarked: true)[Bibliography]]#v(-1cm)
 #bibliography("Biblio.bib", title: none, full: true, style: "ieee")
+
+// --- Abstract | Résumé ---
+#set page(header: none, numbering: none)
+#outlinebox(
+  title: "Abstract",
+  color: none,
+  width: auto,
+  radius: 2pt,
+  centering: false
+)[
+  #abstract
+  #line(length: 100%)
+  _*Keywords  --*_ #keywords
+]
+
+#outlinebox(
+  title: "Résumé",
+  color: none,
+  width: auto,
+  radius: 2pt,
+  centering: false
+)[
+  #resume
+  #line(length: 100%)
+  _*Mots clés --*_ #motscles
+]
