@@ -1,0 +1,15 @@
+{
+	"name": "Typst",
+	"image": "ghcr.io/typst/typst:latest",
+	"waitFor": "onCreateCommand",
+	"updateContentCommand": "apk add git",
+	"postCreateCommand": "",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"nvarner.typst-lsp",
+				"mathematic.vscode-pdf"
+			]
+		}
+	}
+}
