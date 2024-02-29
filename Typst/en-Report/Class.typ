@@ -7,7 +7,6 @@
   supervisor: "",
   author: "",
   date: none,
-  //ch: none,
   body,
 ) = { 
 
@@ -35,17 +34,14 @@
   show heading: set block(below: 0.85em, above: 1.75em)
   show heading: set text(font: body-font)
   set heading(numbering: "1.1")
-
-  //let ch = false
-  //if ch == false [ 
+ 
+ /*
   set page(header: locate(loc => {
   let elems = query(
     selector(heading).before(loc),
     loc,
   )
-  let capstone = smallcaps[
-    #title
-  ]
+
   if elems == () {
     align(right, capstone)
   } else {
@@ -53,13 +49,11 @@
     capstone + h(1fr) + emph(body)
   }
 }))
-//]
-//else [
-//set page(header: none)
-//]
+*/
 
   // --- Paragraphs ---
-  set par(leading: 1em, justify: true, first-line-indent: 2em)
+  show par: set block(spacing: 1.5em)
+  set par(leading: 1em, justify: true)
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
@@ -69,17 +63,16 @@
   pagebreak()
   
 }
-
+ 
 // --- Chapter Titles --- 
 #let chap(ref) = {
-  v(1fr)
   pagebreak()
+  set page(header: none)
+  v(7cm)
   place(
-    center,  
-    rect(height: 50pt,radius: (rest: 2pt))[
-      #text(3em, weight: 700, ref)
-      ]
+	center,  
+	rect(height: 50pt,radius: (rest: 2pt))[
+	  #text(3em, weight: 700, ref)
+	  ]
   )
-  pagebreak()
-  v(1fr)
 }

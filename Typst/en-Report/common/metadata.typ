@@ -1,4 +1,4 @@
-// Enter your thesis data here:
+// Enter your project data here:
 #let title = "Project Title"
 #let titre = "Titre"
 #let diploma = "License"
@@ -11,4 +11,5 @@
 #let chap2 = "Design Overview"
 #let chap3 = "Implementation"
 
+#let dedication = lorem(16)
 #let ack = lorem(32)

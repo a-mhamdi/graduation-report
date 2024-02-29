@@ -9,6 +9,7 @@
 ) = {
  
   set page(
+  	header: none,
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
     numbering: none,
     number-align: center,
@@ -36,12 +37,11 @@
 
   v(5mm)
   align(center, image("../images/logo-isetbz.png", width: 25%))
-  
   v(15mm)
 
   align(center, text(font: sans-font, 1.3em, weight: 100, diploma + " in " + program))
+  
   v(8mm)
-
   align(center, text(font: sans-font, 2em, weight: 700, title))
 
   pad(

@@ -1,4 +1,8 @@
-= General Introduction
+#import "../common/metadata.typ": title
+#set page(header: smallcaps(title) + h(1fr) + emph("General Introduction") + line(length: 100%)) 
+#text(white)[= General Introduction]#v(-1cm)
+/* ------------------ */ 
+
 // Provide an introduction to your capstone project, including its objectives and significance.
 
 *Context & Motivations*

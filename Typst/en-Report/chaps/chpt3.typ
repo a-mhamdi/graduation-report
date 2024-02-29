@@ -1,5 +1,7 @@
-#import "../common/metadata.typ": chap3
-= #chap3 <chp:chap3>
+#import "../common/metadata.typ": title, chap3
+#set page(header: smallcaps(title) + h(1fr) + emph(chap3) + line(length: 100%)) 
+#text(white)[= #chap3 <chp:chap3>]#v(-1cm)
+/* ------------------ */ 
 
 == Introduction
 #lorem(32)

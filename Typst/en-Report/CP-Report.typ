@@ -14,7 +14,6 @@
   supervisor: supervisor,
   author: author,
   date: date,
-  //ch: false
 )
 
 #titlepage(
@@ -27,12 +26,13 @@
   date: date
 )
 
-// #set heading(numbering: "1.1")
 #set math.equation(numbering: "(1)" )
 
 /* ### Capstone Project Report ### */
 
 // TOC
+#set page(numbering: "i")
+#counter(page).update(1)
 #outline(depth: 3, indent: auto)
 // LOF
 #pagebreak()
@@ -47,15 +47,16 @@
   target: figure.where(kind: table),
 )
 
-//#let ch = true
-
 #pagebreak()
 #pagebreak()
+#place(bottom + right, box(width: 256pt, text(emph(dedication))))
 
 #set heading(numbering: none)
 #chap("Acknowledgements")
 #ack
 
+#set page(numbering: "1")
+#counter(page).update(1)
 #chap("General Introduction") // GI
 #include "chaps/intro.typ"
 #set heading(numbering: "1.", supplement: [Chapter])
@@ -70,6 +71,8 @@
 #include "chaps/outro.typ"
 
 // --- References ---
-Full documentation on the usage of Markdown text was noted by @Mailund2019. // This is test! Remove this line, please.
+//Full documentation on the usage of Markdown text was noted by @Mailund2019. // This is test! Remove this line, please.
 #chap("Bibliography")
-#bibliography("Biblio.bib", style: "ieee")
+#set page(header: smallcaps(title) + h(1fr) + emph("Bibliography") + line(length: 100%))
+#text(white)[#heading(bookmarked: true)[Bibliography]]#v(-1cm)
+#bibliography("Biblio.bib", title: none, full: true, style: "ieee")
