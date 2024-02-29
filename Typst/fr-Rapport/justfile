@@ -1,0 +1,8 @@
+build: write-config
+  typst compile Rapport-PFE.typ
+
+watch: write-config
+  typst watch --open xdg-open Rapport-PFE.typ
+
+write-config:
+  echo "Done!" 
