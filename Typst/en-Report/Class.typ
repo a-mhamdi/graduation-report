@@ -1,19 +1,20 @@
-
+// DOCUMENT CLASS
 #import "@preview/colorful-boxes:1.2.0": outlinebox
 #import "common/metadata.typ": *
 
 // --- Chapter Titles --- 
-#let chap(ref, ack: false) = {
-  set page(header: none)
+#let chap(myRef, notAck: true, numbering: none) = {
   v(8cm)
-  if ack == false {
-    text(white)[= #ref]
-  }
   place(
-	center,  
-	rect(height: 50pt,radius: (rest: 2pt))[
-	  #text(3em, weight: 700, ref)
-	  ]
+    center, 
+    rect(
+      width: 15cm, 
+      height: 3cm,
+      radius: (rest: 2pt)
+    )[
+    #v(1cm)
+    #text(2em, smallcaps(heading(outlined: notAck, numbering: numbering, myRef)))
+    ] 
   )
 }
 
@@ -33,7 +34,6 @@
   // --- Set the document's geometric properties. ---
   set page(
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
-    numbering: "1",
     number-align: center,
   )
 
@@ -53,23 +53,22 @@
   // --- Headings ---
   show heading: set block(below: 0.85em, above: 1.75em)
   show heading: set text(font: body-font)
-  set heading(numbering: "1.1")
- 
+
  /*
   set page(header: locate(loc => {
-  let elems = query(
-    selector(heading).before(loc),
-    loc,
-  )
+    let elems = query(
+      selector(heading).before(loc),
+      loc,
+    )
 
-  if elems == () {
-    align(right, capstone)
-  } else {
-    let body = elems.last().body
-    capstone + h(1fr) + emph(body)
-  }
-}))
-*/
+    if elems == () {
+      align(right, capstone)
+    } else {
+      let body = elems.last().body
+      capstone + h(1fr) + emph(body)
+    }
+  }))
+  */
 
   // --- Paragraphs ---
   show par: set block(spacing: 1.5em)
@@ -78,12 +77,13 @@
   // --- Figures ---
   show figure: set text(size: 0.85em)
 
-
   body
 
   // --- Bibliography ---
   if bibFile != none {
-    chap("Bibliography")
+  	set page(header: none)
+    set heading(numbering: none)
+  	figure(chap("Bibliography"), supplement: "Chapter") // Bibliography
     set page(header: smallcaps(title) + h(1fr) + emph("Bibliography") + line(length: 100%))
     //text(white)[#heading(bookmarked: true)[Bibliography]]
     v(-1cm)

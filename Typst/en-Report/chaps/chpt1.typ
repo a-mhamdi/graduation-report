@@ -1,11 +1,13 @@
 /* --------------------------------- DO NOT EDIT -------------------------------- */
 #import "../Class.typ": *
 #show: report.with(isAbstract: false)
-#chap(chap1) // Chapter 1
-#set page(header: smallcaps(title) + h(1fr) + emph(chap1) + line(length: 100%)) 
+#set page(header: none)
+#figure(chap(chap1, numbering: "1."), kind: "chapter", supplement: "Chapter") <chp:chap1> // Chapter 1
+#set page(header: smallcaps(title) + h(1fr) + emph(chap1) + line(length: 100%))
+#set heading(level: 2, outlined: true, numbering: "1.") 
 /* ------------------------------------------------------------------------------ */ 
 
-== Introduction <chp:chap1>
+#heading(level: 2, numbering: none)[Introduction]
 #lorem(32)
 
 == Section 1
@@ -23,7 +25,7 @@
 #lorem(64)
 
 #figure(
-  image("images/typst.svg", width: 40%),
+  image("images/typst.svg", width: 10%),
   caption: "Typst logo",
 ) <fig:typst-logo>
 
@@ -39,5 +41,5 @@
 
 @tab:some-table displays some table.
 
-== Conclusion
+#heading(level: 2, numbering: none)[Conclusion]
 #lorem(32)

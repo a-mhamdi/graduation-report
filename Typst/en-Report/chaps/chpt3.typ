@@ -1,11 +1,13 @@
 /* --------------------------------- DO NOT EDIT -------------------------------- */
 #import "../Class.typ": *
 #show: report.with(isAbstract: false)
-#chap(chap3) // Chapter 3
-#set page(header: smallcaps(title) + h(1fr) + emph(chap3) + line(length: 100%)) 
+#set page(header: none)
+#figure(chap(chap3, numbering: "1."), kind: "chapter", supplement: "Chapter") <chp:chap3> // Chapter 3
+#set page(header: smallcaps(title) + h(1fr) + emph(chap3) + line(length: 100%))
+#set heading(level: 2, outlined: true, numbering: "1.") 
 /* ------------------------------------------------------------------------------ */ 
 
-== Introduction <chp:chap3>
+#heading(level: 2, numbering: none)[Introduction]
 #lorem(32)
 
 == Section 1
@@ -22,5 +24,5 @@
 === Subsection 2.2
 #lorem(64)
 
-== Conclusion
+#heading(level: 2, numbering: none)[Conclusion]
 #lorem(32)

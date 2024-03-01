@@ -53,19 +53,19 @@
 #pagebreak()
 #place(bottom + right, box(width: 256pt, text(emph(dedication))))
 
-#set heading(numbering: none)
-#chap("Acknowledgements", ack: true)
+#set page(header: none)
+#chap("Acknowledgements", notAck: false)
+#pagebreak()
 #ack
+
 
 #set page(numbering: "1")
 #counter(page).update(1)
 
+// --- GI + Chaps + GC ---
 #include "chaps/intro.typ"
-#set heading(numbering: "1.", supplement: [Chapter])
 #include "chaps/chpt1.typ"
 #include "chaps/chpt2.typ"
 #include "chaps/chpt3.typ"
-#set heading(numbering: none)
 #include "chaps/outro.typ"
-
 // --- END OF DOCUMENT ---
