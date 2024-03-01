@@ -59,8 +59,6 @@
   show figure: set text(size: 0.85em)
 
   body
-
-  pagebreak()
   
 }
  
