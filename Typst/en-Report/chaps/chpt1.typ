@@ -21,5 +21,22 @@
 === Subsection 2.2
 #lorem(64)
 
+#figure(
+  image("images/typst.svg", width: 40%),
+  caption: "Typst logo",
+) <fig:typst-logo>
+
+@fig:typst-logo shows the `Typst` logo.
+
+#figure(
+  table(
+    columns: (auto, auto, auto),
+    [a], [b], [c], [$a$], [$b$], [$c$],
+  ),
+  caption: "Some table",
+) <tab:some-table>
+
+@tab:some-table displays some table.
+
 == Conclusion
 #lorem(32)

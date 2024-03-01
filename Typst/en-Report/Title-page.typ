@@ -36,7 +36,7 @@
   align(center, text(font: sans-font, 1.25em, weight: 100, "Institute of Technological Studies of Bizerte"))
 
   v(5mm)
-  align(center, image("../images/logo-isetbz.png", width: 25%))
+  align(center, image("Logo-ISETBZ.png", width: 25%))
   v(15mm)
 
   align(center, text(font: sans-font, 1.3em, weight: 100, diploma + " in " + program))

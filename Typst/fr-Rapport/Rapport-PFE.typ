@@ -2,13 +2,12 @@
 #import "Class.typ": *
 
 #import "common/metadata.typ": *
-#import "common/titlepage.typ": *
+#import "Title-page.typ": *
 
 #import "@preview/colorful-boxes:1.2.0": outlinebox
 
 #set document(author: author, title: title, keywords: "rapport, pfe, projet, typst", date: auto)
 
-// The project function is called with the content of the document.
 #show: report.with(
   title: title,
   diploma: diploma,
@@ -58,20 +57,20 @@
 
 #set page(numbering: "1")
 #counter(page).update(1)
-#chap("Introduction générale") // GI
+#chap("Introduction générale") // IG
 #include "chaps/intro.typ"
 #set heading(numbering: "1.", supplement: [Chapter])
-#chap(chap1) // Chapter 1
+#chap(chap1) // Chapitre 1
 #include "chaps/chpt1.typ"
-#chap(chap2) // Chapter 2
+#chap(chap2) // Chapitre 2
 #include "chaps/chpt2.typ"
-#chap(chap3) // Chapter 3
+#chap(chap3) // Chapitre 3
 #include "chaps/chpt3.typ"
 #set heading(numbering: none)
-#chap("Conclusion générale") // GC
+#chap("Conclusion générale") // CG
 #include "chaps/outro.typ"
 
-// --- References ---
+// --- Références ---
 #chap("Bibliographie")
 #set page(header: smallcaps(title) + h(1fr) + emph("Bibliographie") + line(length: 100%))
 #text(white)[#heading(bookmarked: true)[Bibliographie]]#v(-1cm)

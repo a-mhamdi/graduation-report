@@ -1,10 +1,10 @@
 // CAPSTONE PROJECT
 #import "Class.typ": *
 
-#import "common/metadata.typ": *
-#import "common/titlepage.typ": *
-
 #import "@preview/colorful-boxes:1.2.0": outlinebox
+
+#import "common/metadata.typ": *
+#import "Title-page.typ": *
 
 #set document(author: author, title: title, keywords: "report, capstone, project, typst", date: auto)
 
