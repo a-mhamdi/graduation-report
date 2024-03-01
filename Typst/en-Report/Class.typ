@@ -1,4 +1,22 @@
 
+#import "@preview/colorful-boxes:1.2.0": outlinebox
+#import "common/metadata.typ": *
+
+// --- Chapter Titles --- 
+#let chap(ref, ack: false) = {
+  set page(header: none)
+  v(8cm)
+  if ack == false {
+    text(white)[= #ref]
+  }
+  place(
+	center,  
+	rect(height: 50pt,radius: (rest: 2pt))[
+	  #text(3em, weight: 700, ref)
+	  ]
+  )
+}
+
 #let report(
   title: "",
   titre: "",
@@ -7,6 +25,8 @@
   supervisor: "",
   author: "",
   date: none,
+  bibFile: none,
+  isAbstract: false,
   body,
 ) = { 
 
@@ -58,21 +78,43 @@
   // --- Figures ---
   show figure: set text(size: 0.85em)
 
+
   body
 
-  pagebreak()
-  
-}
- 
-// --- Chapter Titles --- 
-#let chap(ref) = {
-  pagebreak()
-  set page(header: none)
-  v(7cm)
-  place(
-	center,  
-	rect(height: 50pt,radius: (rest: 2pt))[
-	  #text(3em, weight: 700, ref)
-	  ]
-  )
+  // --- Bibliography ---
+  if bibFile != none {
+    chap("Bibliography")
+    set page(header: smallcaps(title) + h(1fr) + emph("Bibliography") + line(length: 100%))
+    //text(white)[#heading(bookmarked: true)[Bibliography]]
+    v(-1cm)
+    bibliography(bibFile, title: none, full: true, style: "ieee")
+  }
+
+  // --- Abstract | Résumé ---
+  if isAbstract == true {
+    set page(header: none, numbering: none)
+    outlinebox(
+      title: "Abstract",
+      color: none,
+      width: auto,
+      radius: 2pt,
+      centering: false
+    )[
+      #abstract
+      #line(length: 100%)
+      _*Keywords  --*_ #keywords
+    ]
+
+    outlinebox(
+      title: "Résumé",
+      color: none,
+      width: auto,
+      radius: 2pt,
+      centering: false
+    )[
+      #resume
+      #line(length: 100%)
+      _*Mots clés --*_ #motscles
+    ]
+  }
 }

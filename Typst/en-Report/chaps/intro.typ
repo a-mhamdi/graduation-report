@@ -1,7 +1,8 @@
 /* --------------------------------- DO NOT EDIT -------------------------------- */
-#import "../common/metadata.typ": title
+#import "../Class.typ": *
+#show: report.with(isAbstract: false)
+#chap("General Introduction") // GI
 #set page(header: smallcaps(title) + h(1fr) + emph("General Introduction") + line(length: 100%)) 
-#text(white)[= General Introduction]#v(-1cm)
 /* ------------------------------------------------------------------------------ */ 
 
 // Provide an introduction to your capstone project, including its objectives and significance.

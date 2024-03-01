@@ -1,10 +1,11 @@
 /* --------------------------------- DO NOT EDIT -------------------------------- */
-#import "../common/metadata.typ": title, chap1
+#import "../Class.typ": *
+#show: report.with(isAbstract: false)
+#chap(chap1) // Chapter 1
 #set page(header: smallcaps(title) + h(1fr) + emph(chap1) + line(length: 100%)) 
-#text(white)[= #chap1 <chp:chap1>]#v(-1cm)
 /* ------------------------------------------------------------------------------ */ 
 
-== Introduction
+== Introduction <chp:chap1>
 #lorem(32)
 
 == Section 1

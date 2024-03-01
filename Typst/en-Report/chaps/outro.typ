@@ -1,7 +1,8 @@
 /* --------------------------------- DO NOT EDIT -------------------------------- */
-#import "../common/metadata.typ": title
+#import "../Class.typ": *
+#show: report.with(isAbstract: false)
+#chap("General Conclusion") // GC
 #set page(header: smallcaps(title) + h(1fr) + emph("General Conclusion") + line(length: 100%)) 
-#text(white)[= General Conclusion]#v(-1cm)
 /* ------------------------------------------------------------------------------ */ 
 
 // Summarize the key findings and conclusions of your capstone project.
