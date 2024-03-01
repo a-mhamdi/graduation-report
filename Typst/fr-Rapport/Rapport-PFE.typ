@@ -6,7 +6,7 @@
 
 #import "@preview/colorful-boxes:1.2.0": outlinebox
 
-#set document(author: author, title: title, keywords: "rapport, pfe, projet, typst", date: auto)
+#set document(author: author, title: title, keywords: motscles, date: auto)
 
 #show: report.with(
   title: title,

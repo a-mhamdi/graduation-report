@@ -6,7 +6,7 @@
 #import "common/metadata.typ": *
 #import "Title-page.typ": *
 
-#set document(author: author, title: title, keywords: "report, capstone, project, typst", date: auto)
+#set document(author: author, title: title, keywords: keywords, date: auto)
 
 // The project function is called with the content of the document.
 #show: report.with(
