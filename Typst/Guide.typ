@@ -1,6 +1,7 @@
 // HOW TO WRITE IN TYPST
 
 #import "@preview/showybox:2.0.1": showybox
+#import "@preview/colorful-boxes:1.2.0": stickybox
 
 #let title = "Learn To Write In Typst"
 #let author = "A. Mhamdi"
@@ -69,3 +70,13 @@ Typst supports Markdown syntax, which provides a range of formatting options. He
 	@tab:LABEL displays some results.
 	```
 
+#v(-5.15cm)
+#place(
+    right,
+    stickybox(
+        rotation: 64deg,
+        width: 10.75cm,
+    )[
+        The folder `en-Report` is always the newest updated version.
+    ]
+)
