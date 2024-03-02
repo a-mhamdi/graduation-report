@@ -21,13 +21,16 @@
 === Sous-section 2.2
 #lorem(64)
 
+/* --- FIGURE ---
 #figure(
   image("images/typst.svg", width: 40%),
   caption: "Typst logo",
 ) <fig:typst-logo>
 
 @fig:typst-logo affiche le logo de `Typst`.
+*/
 
+/* --- TABLE ---
 #figure(
   table(
     columns: (auto, auto, auto),
@@ -37,6 +40,7 @@
 ) <tab:une-table>
 
 @tab:une-table montre un tableau.
+*/
 
 == Conclusion
 #lorem(32)
