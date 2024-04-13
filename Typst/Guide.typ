@@ -70,6 +70,7 @@ Typst supports Markdown syntax, which provides a range of formatting options. He
 	@tab:LABEL displays some results.
 	```
 
+/*
 #v(-5.15cm)
 #place(
     right,
@@ -80,3 +81,4 @@ Typst supports Markdown syntax, which provides a range of formatting options. He
         The folder `en-Report` is always the newest updated version.
     ]
 )
+*/
