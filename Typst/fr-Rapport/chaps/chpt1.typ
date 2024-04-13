@@ -1,10 +1,13 @@
-/* ------------------------------- NE PAS MODIFIER ------------------------------ */
-#import "../common/metadata.typ": title, chap1
-#set page(header: smallcaps(title) + h(1fr) + emph(chap1) + line(length: 100%)) 
-#text(white)[= #chap1 <chp:chap1>]#v(-1cm)
+/* --------------------------------- DO NOT EDIT -------------------------------- */
+#import "../Class.typ": *
+#show: report.with(isAbstract: false)
+#set page(header: none)
+#figure(chap(chap1, numbering: "1."), kind: "chapter", supplement: "Chapitre") <chp:chap1> // Chapter 1
+#set page(header: smallcaps(title) + h(1fr) + emph(chap1) + line(length: 100%))
+#set heading(level: 2, outlined: true, numbering: "1.") 
 /* ------------------------------------------------------------------------------ */ 
 
-== Introduction
+#heading(level: 2, numbering: none)[Introduction]
 #lorem(32)
 
 == Section 1
@@ -21,26 +24,5 @@
 === Sous-section 2.2
 #lorem(64)
 
-/* --- FIGURE ---
-#figure(
-  image("images/typst.svg", width: 40%),
-  caption: "Typst logo",
-) <fig:typst-logo>
-
-@fig:typst-logo affiche le logo de `Typst`.
-*/
-
-/* --- TABLE ---
-#figure(
-  table(
-    columns: (auto, auto, auto),
-    [a], [b], [c], [$a$], [$b$], [$c$],
-  ),
-  caption: "Une table",
-) <tab:une-table>
-
-@tab:une-table montre un tableau.
-*/
-
-== Conclusion
+#heading(level: 2, numbering: none)[Conclusion]
 #lorem(32)

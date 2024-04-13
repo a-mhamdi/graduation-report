@@ -1,19 +1,39 @@
+// DOCUMENT CLASS
+#import "@preview/colorful-boxes:1.2.0": outlinebox
+#import "common/metadata.typ": *
+
+// --- Titles of Chapters --- 
+#let chap(myRef, notAck: true, numbering: none) = {
+  v(8cm)
+  place(
+    center, 
+    rect(
+      width: 15cm, 
+      height: 3cm,
+      radius: (rest: 2pt)
+    )[
+    #v(1cm)
+    #text(2em, smallcaps(heading(outlined: notAck, numbering: numbering, myRef)))
+    ] 
+  )
+}
 
 #let report(
   title: "",
+  titre: "",
   diploma: "",
   program: "",
   supervisor: "",
   author: "",
   date: none,
+  bibFile: none,
+  isAbstract: false,
   body,
 ) = { 
 
   // --- Set the document's geometric properties. ---
   set page(
-    paper: "a4",
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
-    numbering: "1",
     number-align: center,
   )
 
@@ -33,23 +53,22 @@
   // --- Headings ---
   show heading: set block(below: 0.85em, above: 1.75em)
   show heading: set text(font: body-font)
-  set heading(numbering: "1.1")
- 
+
  /*
   set page(header: locate(loc => {
-  let elems = query(
-    selector(heading).before(loc),
-    loc,
-  )
+    let elems = query(
+      selector(heading).before(loc),
+      loc,
+    )
 
-  if elems == () {
-    align(right, capstone)
-  } else {
-    let body = elems.last().body
-    capstone + h(1fr) + emph(body)
-  }
-}))
-*/
+    if elems == () {
+      align(right, capstone)
+    } else {
+      let body = elems.last().body
+      capstone + h(1fr) + emph(body)
+    }
+  }))
+  */
 
   // --- Paragraphs ---
   show par: set block(spacing: 1.5em)
@@ -57,23 +76,47 @@
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
-  show figure.where(
+	
+	show figure.where(
     kind: table
   ): set figure.caption(position: top)
-
-  body
   
-}
- 
-// --- Chapter Titles --- 
-#let chap(ref) = {
-  pagebreak()
-  set page(header: none)
-  v(7cm)
-  place(
-	center,  
-	rect(height: 50pt,radius: (rest: 2pt))[
-	  #text(3em, weight: 700, ref)
-	  ]
-  )
+  body
+
+  // --- Bibliography ---
+  if bibFile != none {
+  	set page(header: none)
+    set heading(numbering: none)
+  	figure(chap("Bibliographie"), supplement: "Chapitre") // Bibliography
+    set page(header: smallcaps(title) + h(1fr) + emph("Bibliographie") + line(length: 100%))
+    v(-1cm)
+    bibliography(bibFile, title: none, full: true, style: "ieee")
+  }
+
+  // --- Résumé | Abstract ---
+  if isAbstract == true {
+    set page(header: none, numbering: none)
+    outlinebox(
+      title: "Résumé",
+      color: none,
+      width: auto,
+      radius: 2pt,
+      centering: false
+    )[
+      #resume
+      #line(length: 100%)
+      _*Mots clés --*_ #motscles
+    ]
+      outlinebox(
+      title: "Abstract",
+      color: none,
+      width: auto,
+      radius: 2pt,
+      centering: false
+    )[
+      #abstract
+      #line(length: 100%)
+      _*Keywords  --*_ #keywords
+    ]
+  }
 }

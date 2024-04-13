@@ -21,7 +21,7 @@
   set text(
     font: body-font, 
     size: 12pt, 
-    lang: "en"
+    lang: "fr"
   )
 
   set par(leading: 1em)
@@ -30,16 +30,16 @@
   // --- Title Page ---
 
   v(15mm)
-  align(center, text(font: sans-font, 1em, weight: 100, "Ministère de l'Enseignement Supérieur et de la Recherche Scientifique, Tunisie"))
+  align(center, text(font: sans-font, 1.25em, weight: 100, "Ministère de l'Enseignement Supérieur et de la Recherche Scientifique, Tunisie"))
 
   v(10mm)
-  align(center, text(font: sans-font, 1em, weight: 100, "Institut Supérieur des Etudes Technologiques de Bizerte"))
+  align(center, text(font: sans-font, 1.25em, weight: 100, "Institut Supérieur des Etudes Technologiques de Bizerte"))
 
   v(5mm)
   align(center, image("Logo-ISETBZ.png", width: 25%))
   v(15mm)
 
-  align(center, text(font: sans-font, 1.3em, weight: 100, diploma + " in " + program))
+  align(center, text(font: sans-font, 1.3em, weight: 100, diploma + " en " + program))
   
   v(8mm)
   align(center, text(font: sans-font, 2em, weight: 700, title))
@@ -51,9 +51,9 @@
     grid(
       columns: 2,
       gutter: 1em,
-      strong("Etudiant(e)(s) : "), author,
+      strong("Etudiant(e) : "), author,
       strong("Encadrant(e) : "), supervisor,
-      strong("Date: "), date,
+      strong("Date : "), date,
     )
   )
 

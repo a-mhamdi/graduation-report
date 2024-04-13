@@ -1,5 +1,6 @@
 // Enter your project data here:
 #let title = "Titre du projet"
+#let titre = "Titre"
 #let diploma = "Licence"
 #let program = "Génie Electrique"
 #let supervisor = "M. (Mme) ***"
