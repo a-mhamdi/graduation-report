@@ -24,5 +24,24 @@
 === Subsection 2.2
 #lorem(64)
 
+/* --- FIGURE --- */
+#figure(
+  image("images/typst.svg", width: 10%),
+  caption: "Typst logo",
+) <fig:typst-logo>
+
+@fig:typst-logo shows the `Typst` logo.
+
+/* --- TABLE --- */
+#figure(
+  table(
+    columns: (auto, auto, auto),
+    [a], [b], [c], [$a$], [$b$], [$c$],
+  ),
+  caption: "Some table",
+) <tab:some-table>
+
+@tab:some-table displays some table.
+
 #heading(level: 2, numbering: none)[Conclusion]
 #lorem(32)

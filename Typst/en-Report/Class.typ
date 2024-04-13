@@ -2,7 +2,7 @@
 #import "@preview/colorful-boxes:1.2.0": outlinebox
 #import "common/metadata.typ": *
 
-// --- Chapter Titles --- 
+// --- Titles of Chapters --- 
 #let chap(myRef, notAck: true, numbering: none) = {
   v(8cm)
   place(
