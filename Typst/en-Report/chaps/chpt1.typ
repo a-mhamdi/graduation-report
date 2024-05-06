@@ -4,7 +4,7 @@
 #set page(header: none)
 #figure(chap(chap1, numbering: "1."), kind: "chapter", supplement: "Chapter") <chp:chap1> // Chapter 1
 #set page(header: smallcaps(title) + h(1fr) + emph(chap1) + line(length: 100%))
-#set heading(level: 2, outlined: true, numbering: "1.") 
+#set heading(outlined: true, numbering: "1.") 
 /* ------------------------------------------------------------------------------ */ 
 
 #heading(level: 2, numbering: none)[Introduction]
