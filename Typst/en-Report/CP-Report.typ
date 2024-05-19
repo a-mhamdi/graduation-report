@@ -28,8 +28,6 @@
   date: date
 )
 
-#set math.equation(numbering: "(1)" )
-
 /* ### Capstone Project Report ### */
 
 // TOC

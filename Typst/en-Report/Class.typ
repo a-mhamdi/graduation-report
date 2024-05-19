@@ -37,13 +37,9 @@
     number-align: center,
   )
 
-  // --- Save heading and body font families in variables ---
-  let body-font = "Garamond"
-  let sans-font = "Garamond"
-
   // --- Body font family ---
   set text(
-    font: body-font, 
+    font: "EB Garamond",
     size: 12pt, 
     lang: "en"
   )
@@ -52,45 +48,44 @@
   
   // --- Headings ---
   show heading: set block(below: 0.85em, above: 1.75em)
-  show heading: set text(font: body-font)
-
- /*
-  set page(header: locate(loc => {
-    let elems = query(
-      selector(heading).before(loc),
-      loc,
-    )
-
-    if elems == () {
-      align(right, capstone)
-    } else {
-      let body = elems.last().body
-      capstone + h(1fr) + emph(body)
-    }
-  }))
-  */
 
   // --- Paragraphs ---
   show par: set block(spacing: 1.5em)
   set par(leading: 1em, justify: true)
 
   // --- Figures ---
-  show figure: set text(size: 0.85em)
-	
-	show figure.where(
-    kind: table
-  ): set figure.caption(position: top)
+  show figure: set text(size: 12pt)
+  set figure(numbering: "1 ")
+  show figure: set figure.caption(separator: [: ])
+  show figure.where(kind: image): set figure(supplement: "Fig.")
+  show figure.where(kind: table): set figure(supplement: "Tab.")
+  show figure.where(kind: table): set figure.caption(position: top)
   
+  // --- Maths ---
+  show math.equation: set text(font: "Cambria Math", size: 12pt)
+  set math.equation(numbering: "(1)")
+
+  show ref: it => {
+    let el = it.element
+    if el != none and el.func() == math.equation {
+      link(el.location(), numbering(
+        "Eq. (1)",
+        counter(math.equation).at(el.location()).at(0)
+      ))
+    } else {
+      it
+    }
+  }
+
+  // --- Body --- 
   body
 
   // --- Bibliography ---
   if bibFile != none {
   	set page(header: none)
     set heading(numbering: none)
-  	figure(chap("Bibliography"), supplement: "Chapter") // Bibliography
+  	figure(chap("Bibliography"), kind: "chapter", supplement: "Chapter") // Bibliography
     set page(header: smallcaps(title) + h(1fr) + emph("Bibliography") + line(length: 100%))
-    //text(white)[#heading(bookmarked: true)[Bibliography]]
-    v(-1cm)
     bibliography(bibFile, title: none, full: true, style: "ieee")
   }
 
@@ -108,7 +103,6 @@
       #line(length: 100%)
       _*Keywords  --*_ #keywords
     ]
-
     outlinebox(
       title: "Résumé",
       color: none,
