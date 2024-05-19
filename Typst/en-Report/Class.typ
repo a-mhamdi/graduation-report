@@ -55,7 +55,7 @@
 
   // --- Figures ---
   show figure: set text(size: 12pt)
-  set figure(numbering: "1 ")
+  set figure(numbering: "1")
   show figure: set figure.caption(separator: [: ])
   show figure.where(kind: image): set figure(supplement: "Fig.")
   show figure.where(kind: table): set figure(supplement: "Tab.")
