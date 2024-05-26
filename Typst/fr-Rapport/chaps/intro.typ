@@ -7,11 +7,11 @@
 #set heading(level: 2, outlined: false) 
 /* ------------------------------------------------------------------------------ */ 
 
-== Motivations
+*Motivations*
 
 #lorem(64)
 
-== Plan du rapport
+*Plan du rapport*
 
 #lorem(64)
 

@@ -7,7 +7,7 @@
 #set heading(outlined: true, numbering: "1.") 
 /* ------------------------------------------------------------------------------ */ 
 
-#heading(level: 2, numbering: none)[Introduction]
+== Introduction
 #lorem(32)
 
 == Section 1
@@ -43,5 +43,5 @@
 
 @tab:une-table montre un tableau.
 
-#heading(level: 2, numbering: none)[Conclusion]
+== Conclusion
 #lorem(32)

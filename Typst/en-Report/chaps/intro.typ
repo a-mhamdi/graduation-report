@@ -6,13 +6,12 @@
 #set page(header: smallcaps(title) + h(1fr) + emph("General Introduction") + line(length: 100%))
 #set heading(level: 2, outlined: false) 
 /* ------------------------------------------------------------------------------ */ 
-// Provide an introduction to your capstone project, including its objectives and significance.
 
-== Context & Motivations
+*Context & Motivations*
 
 #lorem(64)
 
-== Detailed Description
+*Detailed Description*
 
 #lorem(64)
 

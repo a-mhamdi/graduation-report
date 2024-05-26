@@ -49,6 +49,14 @@
   // --- Headings ---
   show heading: set block(below: 0.85em, above: 1.75em)
 
+  show heading: it => {
+    if (it.level <= 3) and (it.level > 1){
+          block(counter(heading).display() + " " + it.body)
+    } else {
+          block(it.body)
+    }
+  }
+  
   // --- Paragraphs ---
   show par: set block(spacing: 1.5em)
   set par(leading: 1em, justify: true)

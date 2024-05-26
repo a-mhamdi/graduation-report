@@ -7,10 +7,10 @@
 #set heading(level: 2, outlined: false) 
 /* ------------------------------------------------------------------------------ */ 
 
-== Discussion
+*Discussions*
 
 #lorem(64)
 
-== Perspectives
+*Perspectives*
 
 #lorem(32)

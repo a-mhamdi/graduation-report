@@ -7,7 +7,7 @@
 #set heading(outlined: true, numbering: "1.") 
 /* ------------------------------------------------------------------------------ */ 
 
-#heading(level: 2, numbering: none)[Introduction]
+== Introduction
 #lorem(32)
 
 == Section 1
@@ -24,5 +24,5 @@
 === Subsection 2.2
 #lorem(64)
 
-#heading(level: 2, numbering: none)[Conclusion]
+== Conclusion
 #lorem(32)

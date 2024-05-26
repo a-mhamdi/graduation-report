@@ -7,14 +7,10 @@
 #set heading(level: 2, outlined: false) 
 /* ------------------------------------------------------------------------------ */ 
 
-// Summarize the key findings and conclusions of your capstone project.
-
-== Discussion
-// Analyze and discuss the implications of your results, including any limitations or challenges encountered.
+*Discussions*
 
 #lorem(64)
 
-== Future Work
-// Suggest potential future work and improvements that can be made based on your capstone project.
+*Future Work*
 
 #lorem(32)
