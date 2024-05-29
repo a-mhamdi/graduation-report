@@ -67,6 +67,9 @@
 \bfseries\abstractname\end{center}}%
 {\vfill\null}
 
+\usepackage{parskip}
+\usepackage{placeins} % \FloatBarrier
+
 \usepackage{lipsum}
 \end_preamble
 \options english,frenchb,intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,square,utf8
