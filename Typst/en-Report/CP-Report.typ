@@ -28,26 +28,6 @@
   date: date
 )
 
-/* ### Capstone Project Report ### */
-
-// TOC
-#set page(numbering: "i")
-#counter(page).update(1)
-#outline(depth: 3, indent: auto)
-// LOF
-#pagebreak()
-#outline(
-  title: [List of Figures],
-  target: figure.where(kind: image),
-)
-// LOT
-#pagebreak()
-#outline(
-  title: [List of Tables],
-  target: figure.where(kind: table),
-)
-
-#pagebreak()
 #pagebreak()
 #place(bottom + right, box(width: 256pt, text(emph(dedication))))
 
@@ -56,6 +36,38 @@
 #pagebreak()
 #ack
 
+/* ### Capstone Project Report ### */
+
+// TOC
+#set page(numbering: "i")
+#counter(page).update(1)
+#{
+  show heading: none
+  heading(outlined: false, bookmarked: true)[Contents]
+}
+#outline(depth: 3, indent: auto)
+
+// LOF
+#pagebreak()
+#{
+  show heading: none
+  heading(outlined: false, bookmarked: true)[List of Figures]
+}
+#outline(
+  title: [List of Figures],
+  target: figure.where(kind: image),
+)
+
+// LOT
+#pagebreak()
+#{
+  show heading: none
+  heading(outlined: false, bookmarked: true)[List of Tables]
+}
+#outline(
+  title: [List of Tables],
+  target: figure.where(kind: table),
+)
 
 #set page(numbering: "1")
 #counter(page).update(1)

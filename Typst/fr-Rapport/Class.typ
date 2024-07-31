@@ -9,11 +9,11 @@
     center, 
     rect(
       width: 15cm, 
-      height: 3cm,
-      radius: (rest: 2pt)
+      height: 6cm,
+      radius: (rest: 5pt)
     )[
-    #v(1cm)
-    #text(2em, smallcaps(heading(outlined: notAck, numbering: numbering, myRef)))
+    #v(2.5cm)
+    #text(1.5em, smallcaps(heading(outlined: notAck, numbering: numbering, myRef)))
     ] 
   )
 }
@@ -90,10 +90,9 @@
 
   // --- Bibliography ---
   if bibFile != none {
-  	set page(header: none)
-    set heading(numbering: none)
-  	figure(chap("Bibliographie"), kind: "chapter", supplement: "Chapitre") // Bibliography
-    set page(header: smallcaps(title) + h(1fr) + emph("Bibliographie") + line(length: 100%))
+  	set page(numbering: "1.")
+  	figure(chap("Bibliographie"), kind: "chapter", supplement: "Chapitre") // Bibliographie
+    set page(header: smallcaps(title) + h(1fr) + emph("Bibliographie") + line(length: 100%), numbering: "1.")
     bibliography(bibFile, title: none, full: true, style: "ieee")
   }
 

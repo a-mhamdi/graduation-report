@@ -28,26 +28,6 @@
   date: date
 )
 
-/* ### Raport du PFE ### */
-
-// TOC
-#set page(numbering: "i")
-#counter(page).update(1)
-#outline(depth: 3, indent: auto)
-// LOF
-#pagebreak()
-#outline(
-  title: [Liste des figures],
-  target: figure.where(kind: image),
-)
-// LOT
-#pagebreak()
-#outline(
-  title: [Liste des tableaux],
-  target: figure.where(kind: table),
-)
-
-#pagebreak()
 #pagebreak()
 #place(bottom + right, box(width: 256pt, text(emph(dedication))))
 
@@ -55,6 +35,39 @@
 #chap("Remerciements", notAck: false)
 #pagebreak()
 #ack
+
+/* ### Raport du PFE ### */
+
+// TOC
+#set page(numbering: "i")
+#counter(page).update(1)
+#{
+  show heading: none
+  heading(outlined: false, bookmarked: true)[Table des matières]
+}
+#outline(depth: 3, indent: auto)
+
+// LOF
+#pagebreak()
+#{
+  show heading: none
+  heading(outlined: false, bookmarked: true)[Liste des figures]
+}
+#outline(
+  title: [Liste des figures],
+  target: figure.where(kind: image),
+)
+
+// LOT
+#pagebreak()
+#{
+  show heading: none
+  heading(outlined: false, bookmarked: true)[Liste des tableaux]
+}
+#outline(
+  title: [Liste des tableaux],
+  target: figure.where(kind: table),
+)
 
 #set page(numbering: "1")
 #counter(page).update(1)
