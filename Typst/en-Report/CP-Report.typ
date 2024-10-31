@@ -1,7 +1,7 @@
 // CAPSTONE PROJECT
-#import "Class.typ": *
 
-#import "Title-page.typ": *
+#import "common/class.typ": *
+#import "common/title-page.typ": *
 
 #set document(author: author, title: title, keywords: keywords, date: auto)
 
@@ -11,8 +11,9 @@
   titre: titre,
   diploma: diploma,
   program: program,
-  supervisor: supervisor,
   author: author,
+  advisor: advisor,
+  guest: guest,
   date: date,
   bibFile: "Biblio.bib",
   isAbstract: true,
@@ -23,8 +24,11 @@
   titre: titre,
   diploma: diploma,
   program: program,
-  supervisor: supervisor,
   author: author,
+  advisor: advisor,
+  president: president,
+  reviewer: reviewer,
+  guest: guest,
   date: date
 )
 

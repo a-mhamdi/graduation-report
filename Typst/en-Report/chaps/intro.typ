@@ -1,9 +1,9 @@
 /* --------------------------------- DO NOT EDIT -------------------------------- */
-#import "../Class.typ": *
+#import "../common/class.typ": *
 #show: report.with(isAbstract: false)
 #set page(header: none)
 #figure(chap("General Introduction"), supplement: [Chapter], numbering: none) // GI
-#set page(header: smallcaps(title) + h(1fr) + emph("General Introduction") + line(length: 100%))
+#set page(header: h(1fr) + emph("General Introduction") + line(length: 100%))
 #set heading(level: 2, outlined: false) 
 /* ------------------------------------------------------------------------------ */ 
 

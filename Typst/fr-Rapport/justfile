@@ -1,8 +1,8 @@
 build: write-config
-  typst compile Rapport-PFE.typ
+  typst compile Rapport-Fin-Etudes.typ
 
 watch: write-config
-  typst watch --open xdg-open Rapport-PFE.typ
+  typst watch --open xdg-open Rapport-Fin-Etudes.typ
 
 write-config:
   echo "Done!" 

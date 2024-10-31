@@ -1,10 +1,13 @@
 // Enter your project data here:
 #let title = "Titre du projet"
 #let titre = "Titre"
-#let diploma = "Licence"
-#let program = "Génie Electrique"
-#let supervisor = "M. (Mme) ***"
+#let diploma = "Master Professionnel"
+#let program = "Génie Électrique"
 #let author = "Auteur"
+#let encadrant = "M. (Mme) ***"
+#let president = "M. (Mme) ***"
+#let rapporteur = "M. (Mme) ***"
+#let industriel = "M. (Mme) ***"
 #let date = datetime.today().display()
 
 #let chap1 = "Contexte et problématique"

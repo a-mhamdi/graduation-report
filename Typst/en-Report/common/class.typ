@@ -1,6 +1,6 @@
 // DOCUMENT CLASS
 #import "@preview/colorful-boxes:1.2.0": outlinebox
-#import "common/metadata.typ": *
+#import "../Metadata.typ": *
 
 // --- Titles of Chapters --- 
 #let chap(myRef, notAck: true, numbering: none) = {
@@ -23,8 +23,11 @@
   titre: "",
   diploma: "",
   program: "",
-  supervisor: "",
   author: "",
+  advisor: "",
+  president: "",
+  reviewer: "",
+  guest: "",
   date: none,
   bibFile: none,
   isAbstract: false,
@@ -39,9 +42,9 @@
 
   // --- Body font family ---
   set text(
-    font: "EB Garamond",
+    font: "Charter",
     size: 12pt, 
-    lang: "fr"
+    lang: "en"
   )
 
   show math.equation: set text(weight: 400)
@@ -56,14 +59,14 @@
           block(it.body)
     }
   }
-
+  
   // --- Paragraphs ---
   show par: set block(spacing: 1.5em)
   set par(leading: 1em, justify: true)
 
   // --- Figures ---
   show figure: set text(size: 12pt)
-  set figure(numbering: "1 ")
+  set figure(numbering: "1")
   show figure: set figure.caption(separator: [: ])
   show figure.where(kind: image): set figure(supplement: "Fig.")
   show figure.where(kind: table): set figure(supplement: "Tab.")
@@ -90,26 +93,15 @@
 
   // --- Bibliography ---
   if bibFile != none {
-  	set page(numbering: "1.")
-  	figure(chap("Bibliographie"), kind: "chapter", supplement: "Chapitre") // Bibliographie
-    set page(header: smallcaps(title) + h(1fr) + emph("Bibliographie") + line(length: 100%), numbering: "1.")
-    bibliography(bibFile, title: none, full: true, style: "ieee")
+	set page(numbering: "1")
+  	figure(chap("Bibliography"), kind: "chapter", supplement: "Chapter") // Bibliography
+    set page(header: h(1fr) + emph("Bibliography") + line(length: 100%))
+    bibliography("../" + bibFile, title: none, full: true, style: "ieee")
   }
 
-  // --- Résumé | Abstract ---
+  // --- Abstract | Résumé ---
   if isAbstract == true {
     set page(header: none, numbering: none)
-    outlinebox(
-      title: "Résumé",
-      color: none,
-      width: auto,
-      radius: 2pt,
-      centering: false
-    )[
-      #resume
-      #line(length: 100%)
-      _*Mots clés --*_ #motscles
-    ]
     outlinebox(
       title: "Abstract",
       color: none,
@@ -120,6 +112,17 @@
       #abstract
       #line(length: 100%)
       _*Keywords  --*_ #keywords
+    ]
+    outlinebox(
+      title: "Résumé",
+      color: none,
+      width: auto,
+      radius: 2pt,
+      centering: false
+    )[
+      #resume
+      #line(length: 100%)
+      _*Mots clés --*_ #motscles
     ]
   }
 }

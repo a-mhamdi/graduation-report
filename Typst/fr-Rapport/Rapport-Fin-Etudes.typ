@@ -1,7 +1,7 @@
-// CAPSTONE PROJECT
-#import "Class.typ": *
+// Rapport de fin d'études
 
-#import "Title-page.typ": *
+#import "common/class.typ": *
+#import "common/title-page.typ": *
 
 #set document(author: author, title: title, keywords: motscles, date: auto)
 
@@ -11,8 +11,11 @@
   titre: titre,
   diploma: diploma,
   program: program,
-  supervisor: supervisor,
   author: author,
+  encadrant: encadrant,
+  president: president,
+  rapporteur: rapporteur,
+  industriel: industriel,
   date: date,
   bibFile: "Biblio.bib",
   isAbstract: true,
@@ -23,8 +26,11 @@
   titre: titre,
   diploma: diploma,
   program: program,
-  supervisor: supervisor,
   author: author,
+  encadrant: encadrant,
+  president: president,
+  rapporteur: rapporteur,
+  industriel: industriel,
   date: date
 )
 

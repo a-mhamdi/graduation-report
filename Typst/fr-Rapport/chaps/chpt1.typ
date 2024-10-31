@@ -1,9 +1,9 @@
 /* --------------------------------- DO NOT EDIT -------------------------------- */
-#import "../Class.typ": *
+#import "../common/class.typ": *
 #show: report.with(isAbstract: false)
 #set page(header: none)
 #figure(chap(chap1, numbering: "1."), kind: "chapter", supplement: "Chapitre") <chp:chap1> // Chapter 1
-#set page(header: smallcaps(title) + h(1fr) + emph(chap1) + line(length: 100%))
+#set page(header: h(1fr) + emph(chap1) + line(length: 100%))
 #set heading(outlined: true, numbering: "1.") 
 /* ------------------------------------------------------------------------------ */ 
 

@@ -1,10 +1,13 @@
 // Enter your project data here:
 #let title = "Project Title"
 #let titre = "Titre"
-#let diploma = "License"
+#let diploma = "Master's thesis"
 #let program = "Electrical Engineering"
-#let supervisor = "Mr(s). ***"
 #let author = "Author"
+#let advisor = "Mr(s). ***"
+#let president = "Mr(s). ***"
+#let reviewer = "Mr(s). ***"
+#let guest = "Mr(s). ***"
 #let date = datetime.today().display()
 
 #let chap1 = "Project Context"
@@ -14,8 +17,8 @@
 #let dedication = lorem(16)
 #let ack = lorem(32)
 
-#let resume = lorem(128)
-#let abstract = lorem(128)
+#let resume = lorem(120)
+#let abstract = lorem(120)
 
 #let motscles = "rapport, pfe, typst"
 #let keywords = "report, capstone, typst"
