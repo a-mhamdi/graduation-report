@@ -20,5 +20,5 @@
 #let resume = lorem(120)
 #let abstract = lorem(120)
 
-#let motscles = "rapport, pfe, typst"
+#let motscles = "rapport, projet de fin d'études, typst"
 #let keywords = "report, capstone, typst"
