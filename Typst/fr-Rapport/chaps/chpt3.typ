@@ -38,10 +38,10 @@
     columns: (auto, auto, auto),
     [a], [b], [c], [$a$], [$b$], [$c$],
   ),
-  caption: "Une table",
-) <tab:une-table>
+  caption: "Un tableau",
+) <tab:un-tableau>
 
-@tab:une-table montre un tableau.
+@tab:un-tableau montre un tableau.
 
 == Conclusion
 #lorem(32)

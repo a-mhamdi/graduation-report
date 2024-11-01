@@ -42,7 +42,7 @@
 
   // --- Body font family ---
   set text(
-    font: "Charter",
+    font: "Fontin",
     size: 12pt, 
     lang: "fr"
   )
@@ -61,8 +61,7 @@
   }
 
   // --- Paragraphs ---
-  show par: set block(spacing: 1.5em)
-  set par(leading: 1em, justify: true)
+  set par(spacing: 1.5em, leading: 1em, justify: true)
 
   // --- Figures ---
   show figure: set text(size: 12pt)
@@ -73,7 +72,7 @@
   show figure.where(kind: table): set figure.caption(position: top)
   
   // --- Maths ---
-  show math.equation: set text(font: "Cambria Math", size: 12pt)
+  // show math.equation: set text(font: "Cambria Math", size: 12pt)
   set math.equation(numbering: "(1)")
 
   show ref: it => {

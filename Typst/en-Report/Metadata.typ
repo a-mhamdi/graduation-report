@@ -8,7 +8,7 @@
 #let president = "Mr(s). ***"
 #let reviewer = "Mr(s). ***"
 #let guest = "Mr(s). ***"
-#let date = datetime.today().display()
+#let date = "01 November 2024" // datetime.today().display()
 
 #let chap1 = "Project Context"
 #let chap2 = "Design Overview"
@@ -17,8 +17,8 @@
 #let dedication = lorem(16)
 #let ack = lorem(32)
 
-#let resume = lorem(120)
-#let abstract = lorem(120)
+#let resume = lorem(100)
+#let abstract = lorem(100)
 
 #let motscles = "rapport, pfe, typst"
 #let keywords = "report, capstone, typst"
