@@ -34,9 +34,9 @@
 
   set page(background: image("Cover Page.svg", width: 100%, height: 100%))
 
-  place(dx: 12.5mm, dy: -20mm, right, text(strong("République Tunisienne")))
-  place(dx: 12.5mm, dy: -10mm, right, text(strong("Ministère de l'Enseignement Supérieur et de la Recherche Scientifique")))
-  place(dx: 12.5mm, dy: 0mm, right, text(strong("Direction Générale des Études Technologiques")))
+  place(dx: 12.5mm, dy: -17mm, right, text(strong("République Tunisienne")))
+  place(dx: 12.5mm, dy: -8mm, right, text(strong("Ministère de l'Enseignement Supérieur et de la Recherche Scientifique")))
+  place(dx: 12.5mm, dy: 1mm, right, text(strong("Direction Générale des Études Technologiques")))
   place(dx: 12.5mm, dy: 10mm, right, text(strong("Institut Supérieur des Études Technologiques de Bizerte")))
   
   place(dx: -12.5mm, dy: 30mm, center, box(width: 70%, text(1em, weight: 500, "Mémoire de Master Professionnel")))
