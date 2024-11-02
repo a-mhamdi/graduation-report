@@ -25,14 +25,16 @@
 #lorem(64)
 
 /* --- FIGURE --- */
+@fig:typst-logo affiche le logo de `Typst`.
+
 #figure(
   image("images/typst.svg", width: 10%),
   caption: "Logo de Typst",
 ) <fig:typst-logo>
 
-@fig:typst-logo affiche le logo de `Typst`.
-
 /* --- TABLE --- */
+@tab:un-tableau montre un tableau.
+
 #figure(
   table(
     columns: (auto, auto, auto),
@@ -41,7 +43,12 @@
   caption: "Un tableau",
 ) <tab:un-tableau>
 
-@tab:un-tableau montre un tableau.
+/* --- MATH --- */
+@eq:somme montre la somme des premiers $n$ nombres naturels.
+
+$ sum_(k=0)^n k
+    &= 1 + ... + n \
+    &= (n(n+1)) / 2 $ <eq:somme>
 
 == Conclusion
 #lorem(32)

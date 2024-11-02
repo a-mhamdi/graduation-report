@@ -18,9 +18,6 @@
     number-align: center,
   )
 
-  // let body-font = "New Computer Modern"
-  // let sans-font = "New Computer Modern"
-
   set par(leading: 1em)
 
   
@@ -34,9 +31,9 @@
   place(dx: 12.5mm, dy: 10mm, right, text(strong("Institut Supérieur des Études Technologiques de Bizerte")))
   
   place(dx: 0mm, dy: 30mm, center, box(width: 70%, text(1em, weight: 500, "Mémoire de Master Professionnel")))
-  place(dx: 0mm, dy: 40mm, center, box(width: 70%, text(font: "Fontin SmallCaps", 1em, weight: 600, smallcaps("Robotique Avancée et Intelligence Artificielle"))))
+  place(dx: 0mm, dy: 40mm, center, box(width: 70%, text(1em, weight: 600, smallcaps("Robotique Avancée et Intelligence Artificielle"))))
 
-  place(dx: 0mm, dy: 65mm, center, box(width: 70%, text(font: "Fontin SmallCaps", 2em, weight: 700, line(stroke: 2pt, length: 100%) + smallcaps(title) + line(stroke: 2pt, length: 100%))))
+  place(dx: 0mm, dy: 65mm, center, box(width: 70%, text(2em, weight: 700, line(stroke: 2pt, length: 100%) + smallcaps(title) + line(stroke: 2pt, length: 100%))))
 
   place(dx: 0mm, dy: 115mm, center, align(center, image("HOST.png", height: 3cm)))
  
@@ -49,7 +46,7 @@
       columns: 1,
       align: (center),
       gutter: 2em,
-      "Préparé par : ", text(font: "Fontin SmallCaps", smallcaps(author)),
+      "Préparé par : ", text(smallcaps(author)),
     )
   )
   )))
@@ -64,10 +61,10 @@
       columns: 2,
       align: (right, left),
       gutter: 2em,
-      "Président : ", text(font: "Fontin SmallCaps", smallcaps(president)),
-      "Rapporteur : ", text(font: "Fontin SmallCaps", smallcaps(rapporteur)),
-      "Encadrant ISET : ", text(font: "Fontin SmallCaps", smallcaps(encadrant)),
-      "Encadrant industriel : ", text(font: "Fontin SmallCaps", smallcaps(industriel)),
+      "Président : ", text(smallcaps(president)),
+      "Rapporteur : ", text(smallcaps(rapporteur)),
+      "Encadrant ISET : ", text(smallcaps(encadrant)),
+      "Encadrant industriel : ", text(smallcaps(industriel)),
     )
   )
   )

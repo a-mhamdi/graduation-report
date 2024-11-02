@@ -41,8 +41,11 @@
   )
 
   // --- Body font family ---
+
+  set text(font: "Cambria")
+
   set text(
-    font: "Fontin",
+    fallback: false,
     size: 12pt, 
     lang: "en"
   )
@@ -72,7 +75,7 @@
   show figure.where(kind: table): set figure.caption(position: top)
   
   // --- Maths ---
-  // show math.equation: set text(font: "Cambria Math", size: 12pt)
+  show math.equation: set text(font: "Cambria Math", size: 12pt)
   set math.equation(numbering: "(1)")
 
   show ref: it => {

@@ -32,11 +32,11 @@
   
   place(dx: 0mm, dy: 30mm, center, box(width: 70%, text(1em, weight: 500, "Master's Thesis")))
 
-  place(dx: 0mm, dy: 40mm, center, box(width: 70%, text(font:"Fontin SmallCaps", 1em, weight: 600, smallcaps("Advanced Robotics and Artificial Intelligence"))))
+  place(dx: 0mm, dy: 40mm, center, box(width: 70%, text(1em, weight: 600, smallcaps("Advanced Robotics and Artificial Intelligence"))))
 
   // place(dx: 0mm, dy: 55mm, center, box(width: 70%, text(1em, weight: 500, "Project Title")))
 
-  place(dx: 0mm, dy: 65mm, center, box(width: 70%, text(font:"Fontin SmallCaps", 2em, weight: 700, line(stroke: 2pt, length: 100%) + smallcaps(title) + line(stroke: 2pt, length: 100%))))
+  place(dx: 0mm, dy: 65mm, center, box(width: 70%, text(2em, weight: 700, line(stroke: 2pt, length: 100%) + smallcaps(title) + line(stroke: 2pt, length: 100%))))
 
   place(dx: 0mm, dy: 115mm, center, align(center, image("HOST.png", height: 3cm)))
  
@@ -49,7 +49,7 @@
       columns: 1,
       align: (center),
       gutter: 2em,
-      "Prepared by: ", text(font: "Fontin SmallCaps", smallcaps(author)),
+      "Prepared by: ", text(smallcaps(author)),
     )
   )
   )))
@@ -64,10 +64,10 @@
       columns: 2,
       align: (right, left),
       gutter: 2em,
-      "President: ", text(font: "Fontin SmallCaps", smallcaps(president)),
-      "Reviewer: ", text(font: "Fontin SmallCaps", smallcaps(reviewer)),
-      "Advisor: ", text(font: "Fontin SmallCaps", smallcaps(advisor)),
-      "Co-advisor: ", text(font: "Fontin SmallCaps", smallcaps(guest)),
+      "President: ", text(smallcaps(president)),
+      "Reviewer: ", text(smallcaps(reviewer)),
+      "Advisor: ", text(smallcaps(advisor)),
+      "Co-advisor: ", text(smallcaps(guest)),
     )
   )
   )
