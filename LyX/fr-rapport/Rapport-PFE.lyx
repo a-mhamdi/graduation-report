@@ -639,7 +639,7 @@ tabularnewline
 \backslash
 textbf{Pr
 \backslash
-'esident:}               & 
+'esident:}           & 
 \backslash
 textsc{M.(me) *** ****} & Professeur,
  
@@ -665,7 +665,7 @@ tabularnewline
 
             
 \backslash
-textbf{Rapporteur:}              & 
+textbf{Rapporteur:}            & 
 \backslash
 textsc{M.(me) *** ****} & Professeur,
  
@@ -691,7 +691,7 @@ tabularnewline
 
             % 
 \backslash
-textbf{Membre:}                  & 
+textbf{Membre:}              & 
 \backslash
 textsc{M.(me) *** ****} & Professeur,
  
@@ -749,7 +749,7 @@ textbf{Encadrant soci
 \backslash
 'et
 \backslash
-'e :}       & 
+'e :}   & 
 \backslash
 textsc{M.(me) *** ****} & Professeur,
  

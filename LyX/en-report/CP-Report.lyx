@@ -99,7 +99,7 @@ tcolorbox
 \use_dash_ligatures true
 \graphics default
 \default_output_format default
-\output_sync 0
+\output_sync 1
 \bibtex_command default
 \index_command default
 \float_placement tbh
@@ -394,7 +394,7 @@ stretch{0.025}}
 
 \begin_layout Plain Layout
 
-        for the degree of 
+        for the diploma 
 \backslash
 
 \backslash
@@ -418,7 +418,7 @@ textbf{
 \backslash
 textsc{
 \backslash
-large{Senior Technician in Electrical Engineering}}}
+large{License In Electrical Engineering}}}
 \backslash
 
 \backslash
@@ -510,24 +510,6 @@ begin{center}
 \backslash
 vspace*{
 \backslash
-stretch{0.035}}
-\end_layout
-
-\begin_layout Plain Layout
-
-        Title of the project
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        
-\backslash
-vspace*{
-\backslash
 stretch{0.02}}
 \end_layout
 
@@ -548,7 +530,7 @@ HRule
 \backslash
 Huge{
 \backslash
-textbf{***}}
+textbf{PROJECT TITLE}}
 \backslash
 
 \backslash
@@ -591,7 +573,7 @@ begin{center}
 
 \begin_layout Plain Layout
 
-        Presented on ** June **** in Bizerte before an examination board composed of:
+        Presented on ** June **** in Bizerte before the examination board composed of:
 \backslash
 
 \backslash
@@ -630,7 +612,7 @@ tabularnewline
 
             
 \backslash
-textbf{Chairman:}               & 
+textbf{Chairman:}          & 
 \backslash
 textsc{*** ****} & ***,
  
@@ -656,7 +638,7 @@ tabularnewline
 
             
 \backslash
-textbf{Reviewer:}              & 
+textbf{Reviewer:}          & 
 \backslash
 textsc{*** ****} & ***,
  
@@ -682,7 +664,7 @@ tabularnewline
 
             
 \backslash
-textbf{Examiner:}                  & 
+textbf{Advisor:} 		  & 
 \backslash
 textsc{*** ****} & ***,
  
@@ -708,33 +690,7 @@ tabularnewline
 
             
 \backslash
-textbf{Advisor:} & 
-\backslash
-textsc{*** ****} & ***,
- 
-\backslash
-textsc{****}
-\end_layout
-
-\begin_layout Plain Layout
-
-            
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-            
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-            
-\backslash
-textbf{Co-advisor:}       & 
+textbf{Co-advisor:}        & 
 \backslash
 textsc{*** ****} & ***,
  
